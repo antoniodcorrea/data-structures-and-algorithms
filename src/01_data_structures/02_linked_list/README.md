@@ -59,12 +59,12 @@ REMOVE (head, value)
 FIND (head, value)
   current = head;
 
-  while (current.next IS NOT NULL) {
-    current = current.next;
-
+  WHILE (current IS NOT NULL) {
     IF (current.value IS value) {
       RETURN true;
     }
+
+    current = current.next;
   }
 
   RETURN false;
