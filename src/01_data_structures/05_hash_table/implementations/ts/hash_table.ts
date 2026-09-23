@@ -1,23 +1,12 @@
-import { HashTableLinkedList } from "./hash_table_linked_list";
+import { HashTableLinkedList } from './hash_table_linked_list';
 
 export class HashTable<T> {
-  private buckets: Array<HashTableLinkedList<[string, T]>>;
+  private buckets: Array<HashTableLinkedList<T>>;
   private size;
 
   constructor(size = 127) {
     this.buckets = new Array(size);
     this.size = size;
-  }
-
-  private hash(key: string): number {
-    const stringifiedKey = String(key);
-    let hash = 0;
-
-    for (let i = 0; i < stringifiedKey.length; i++) {
-      hash = hash + stringifiedKey.charCodeAt(i);
-    }
-
-    return hash % this.size;
   }
 
   set(key: string, value: T): HashTable<T> {
@@ -28,7 +17,12 @@ export class HashTable<T> {
     }
 
     const bucket = this.buckets[index];
-    bucket.append([key, value]);
+    const matchKey = ([listKey]: [string, T]) => listKey === key;
+    const appendedToFoundKey = bucket.updateItemIf(matchKey, value);
+
+    if (!appendedToFoundKey) {
+      bucket.append([key, value]);
+    }
 
     return this;
   }
@@ -58,5 +52,16 @@ export class HashTable<T> {
 
   isEmpty(): boolean {
     return this.buckets.every((item) => item.head == null);
+  }
+
+  private hash(key: string): number {
+    const stringifiedKey = String(key);
+    let hash = 0;
+
+    for (let i = 0; i < stringifiedKey.length; i++) {
+      hash = hash + stringifiedKey.charCodeAt(i);
+    }
+
+    return hash % this.size;
   }
 }

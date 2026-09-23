@@ -40,18 +40,27 @@ func (this HashTableLinkedList[T]) Find(matcher func(HashTableLinkedListItem[T])
 	return this.LinkedList.Find(matcher)
 }
 
-func (this HashTableLinkedList[T]) GetItemIf(matcher func(HashTableLinkedListItem[T]) bool) (T, bool) {
-	var zero T
-
+func (this HashTableLinkedList[T]) GetItemIf(matcher func(HashTableLinkedListItem[T]) bool) (*HashTableLinkedListItem[T], bool) {
 	current := this.LinkedList.Head
 
 	for current != nil {
 		if matcher(current.Value) {
-			return current.Value.Value, true
+			return &current.Value, true
 		}
 
 		current = current.Next
 	}
 
-	return zero, false
+	return nil, false
+}
+
+func (this HashTableLinkedList[T]) UpdateItemIf(matcher func(HashTableLinkedListItem[T]) bool, value T) bool {
+	item, ok := this.GetItemIf(matcher)
+	if !ok {
+		return false
+	}
+
+	item.Value = value
+
+	return true
 }

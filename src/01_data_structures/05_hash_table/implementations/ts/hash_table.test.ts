@@ -20,6 +20,19 @@ describe("set()", () => {
 
     expect(item).toBe(1);
   });
+
+  test("Updates the value of an existing key", async () => {
+    const hashTable = new HashTable().set("a", 1).set("a", 2);
+
+    expect(hashTable.get("a")).toBe(2);
+  });
+
+  test("Removes a key that was set twice", async () => {
+    const hashTable = new HashTable().set("a", 1).set("a", 2);
+    hashTable.remove("a");
+
+    expect(hashTable.get("a")).toBe(null);
+  });
 });
 
 describe("get()", () => {

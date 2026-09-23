@@ -5,10 +5,10 @@
   Thus, we extend the Linked list to add this behavior.
 */
 
-import { LinkedList } from "../../../02_linked_list/implementations/ts/linked_list";
+import { LinkedList } from '../../../02_linked_list/implementations/ts/linked_list';
 
-export class HashTableLinkedList<T> extends LinkedList<T> {
-  getItemIf(matcher: (arg: T) => boolean): T | null {
+export class HashTableLinkedList<T> extends LinkedList<[string, T]> {
+  getItemIf(matcher: (arg: [string, T]) => boolean): [string, T] | null {
     let current = this.head;
 
     while (current !== null) {
@@ -21,5 +21,16 @@ export class HashTableLinkedList<T> extends LinkedList<T> {
 
     // Not found
     return null;
+  }
+
+  updateItemIf(matcher: (arg: [string, T]) => boolean, value: T) {
+    const item = this.getItemIf(matcher);
+    if (!item) {
+      return false;
+    }
+
+    item[1] = value;
+
+    return true;
   }
 }

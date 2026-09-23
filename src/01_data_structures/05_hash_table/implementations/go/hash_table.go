@@ -54,7 +54,12 @@ func (hashTable HashTable[T]) Set(key string, value T) HashTable[T] {
 		bucket = hashTable.buckets[index]
 	}
 
-	bucket.Append(HashTableLinkedListItem[T]{Key: key, Value: value})
+    matcher := func(v HashTableLinkedListItem[T]) bool { return v.Key == key }
+    appendedToFoundKey := bucket.UpdateItemIf(matcher, value);
+
+    if(!appendedToFoundKey) {
+        bucket.Append(HashTableLinkedListItem[T]{Key: key, Value: value});
+    }
 
 	return hashTable
 }
@@ -68,13 +73,13 @@ func (hashTable HashTable[T]) Get(key string) (T, bool) {
 		return zero, false
 	}
 
-	var item, ok = bucket.GetItemIf(func(v HashTableLinkedListItem[T]) bool { return v.Key == key })
+	item, ok := bucket.GetItemIf(func(v HashTableLinkedListItem[T]) bool { return v.Key == key })
 
 	if !ok {
 		return zero, false
 	}
 
-	return item, true
+	return item.Value, true
 }
 
 func (hashTable HashTable[T]) Remove(key string) HashTable[T] {

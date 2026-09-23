@@ -61,31 +61,31 @@ mod heap_sort;
 mod divide_and_conquer;
 
 //// Problems
-#[path = "./src/04_problems/02_anagram/implementations/rs/mod.rs"]
+#[path = "./src/05_problems/02_anagram/implementations/rs/mod.rs"]
 mod anagram;
-#[path = "./src/04_problems/03_array_consecutive_missing_numbers/implementations/rs/mod.rs"]
+#[path = "./src/05_problems/03_array_consecutive_missing_numbers/implementations/rs/mod.rs"]
 mod array_consecutive_missing_numbers;
-#[path = "./src/04_problems/04_calculate_list_max_items_difference/implementations/rs/mod.rs"]
+#[path = "./src/05_problems/04_calculate_list_max_items_difference/implementations/rs/mod.rs"]
 mod calculate_list_max_items_difference;
-#[path = "./src/04_problems/05_calculate_no_overlaps/implementations/rs/mod.rs"]
+#[path = "./src/05_problems/05_calculate_no_overlaps/implementations/rs/mod.rs"]
 mod calculate_no_overlaps;
-#[path = "./src/04_problems/01_fizzbuzz/implementations/rs/mod.rs"]
+#[path = "./src/05_problems/01_fizzbuzz/implementations/rs/mod.rs"]
 mod fizzbuzz;
-#[path = "./src/04_problems/06_gigasecond/implementations/rs/mod.rs"]
+#[path = "./src/05_problems/06_gigasecond/implementations/rs/mod.rs"]
 mod gigasecond;
-#[path = "./src/04_problems/07_linear_searching/implementations/rs/mod.rs"]
+#[path = "./src/05_problems/07_linear_searching/implementations/rs/mod.rs"]
 mod linear_searching;
-#[path = "./src/04_problems/08_list_sum_largest_n_numbers/implementations/rs/mod.rs"]
+#[path = "./src/05_problems/08_list_sum_largest_n_numbers/implementations/rs/mod.rs"]
 mod list_sum_largest_n_numbers;
-#[path = "./src/04_problems/09_mystery_algorithm/implementations/rs/mod.rs"]
+#[path = "./src/05_problems/09_mystery_algorithm/implementations/rs/mod.rs"]
 mod mystery_algorithm;
-#[path = "./src/04_problems/10_range_sum_bst/implementations/rs/mod.rs"]
+#[path = "./src/05_problems/10_range_sum_bst/implementations/rs/mod.rs"]
 mod range_sum_bst;
-#[path = "./src/04_problems/11_reverse_words_in_a_sentence/implementations/rs/mod.rs"]
+#[path = "./src/05_problems/11_reverse_words_in_a_sentence/implementations/rs/mod.rs"]
 mod reverse_words_in_a_sentence;
-#[path = "./src/04_problems/12_sort_string/implementations/rs/mod.rs"]
+#[path = "./src/05_problems/12_sort_string/implementations/rs/mod.rs"]
 mod sort_string;
-#[path = "./src/04_problems/13_string_capitalize/implementations/rs/mod.rs"]
+#[path = "./src/05_problems/13_string_capitalize/implementations/rs/mod.rs"]
 mod string_capitalize;
-#[path = "./src/04_problems/14_string_reverse/implementations/rs/mod.rs"]
+#[path = "./src/05_problems/14_string_reverse/implementations/rs/mod.rs"]
 mod string_reverse;

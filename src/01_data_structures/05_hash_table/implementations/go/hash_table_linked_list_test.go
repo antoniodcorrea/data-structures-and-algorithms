@@ -10,15 +10,14 @@ func TestGetItemIfEmptyList(t *testing.T) {
 	var hashTableLinkedList = HashTableLinkedList[int]{
 		LinkedList: &linkedList.LinkedList[HashTableLinkedListItem[int]]{},
 	}
-	expectedResult := 0
 	result, ok := hashTableLinkedList.GetItemIf(func(v HashTableLinkedListItem[int]) bool { return v.Value == 1 })
 
 	if !reflect.DeepEqual(ok, false) {
 		t.Errorf("%v != %v", ok, false)
 	}
 
-	if !reflect.DeepEqual(result, expectedResult) {
-		t.Errorf("%v != %v", result, expectedResult)
+	if result != nil {
+		t.Errorf("%v != %v", result, nil)
 	}
 }
 
@@ -35,8 +34,8 @@ func TestGetItemIfFromListWithOneItem(t *testing.T) {
 		t.Errorf("%v != %v", ok, true)
 	}
 
-	if !reflect.DeepEqual(result, expectedResult) {
-		t.Errorf("%v != %v", result, expectedResult)
+	if !reflect.DeepEqual(result.Value, expectedResult) {
+		t.Errorf("%v != %v", result.Value, expectedResult)
 	}
 }
 
@@ -53,8 +52,8 @@ func TestGetItemIfFromListWithSeveralItems(t *testing.T) {
 		t.Errorf("%v != %v", ok, true)
 	}
 
-	if !reflect.DeepEqual(result1, 1) {
-		t.Errorf("%v != %v", result1, 1)
+	if !reflect.DeepEqual(result1.Value, 1) {
+		t.Errorf("%v != %v", result1.Value, 1)
 	}
 
 	result2, ok := hashTableLinkedList.GetItemIf(func(v HashTableLinkedListItem[int]) bool { return v.Value == 2 })
@@ -63,8 +62,8 @@ func TestGetItemIfFromListWithSeveralItems(t *testing.T) {
 		t.Errorf("%v != %v", ok, true)
 	}
 
-	if !reflect.DeepEqual(result2, 2) {
-		t.Errorf("%v != %v", result2, 2)
+	if !reflect.DeepEqual(result2.Value, 2) {
+		t.Errorf("%v != %v", result2.Value, 2)
 	}
 }
 
@@ -86,8 +85,8 @@ func TestGetItemIfFromListWithComplexItems(t *testing.T) {
 		t.Errorf("%v != %v", ok, true)
 	}
 
-	if !reflect.DeepEqual(firstItem.age, 10) {
-		t.Errorf("%v != %v", firstItem.age, 10)
+	if !reflect.DeepEqual(firstItem.Value.age, 10) {
+		t.Errorf("%v != %v", firstItem.Value.age, 10)
 	}
 
 	secondItem, ok := hashTableLinkedList.GetItemIf(func(v HashTableLinkedListItem[Item]) bool { return v.Value.name == "Ulises" })
@@ -96,8 +95,8 @@ func TestGetItemIfFromListWithComplexItems(t *testing.T) {
 		t.Errorf("%v != %v", ok, true)
 	}
 
-	if !reflect.DeepEqual(secondItem.age, 20) {
-		t.Errorf("%v != %v", secondItem.age, 20)
+	if !reflect.DeepEqual(secondItem.Value.age, 20) {
+		t.Errorf("%v != %v", secondItem.Value.age, 20)
 	}
 
 	thirdItem, ok := hashTableLinkedList.GetItemIf(func(v HashTableLinkedListItem[Item]) bool { return v.Value.name == "Argos" })
@@ -106,7 +105,7 @@ func TestGetItemIfFromListWithComplexItems(t *testing.T) {
 		t.Errorf("%v != %v", ok, false)
 	}
 
-	if !reflect.DeepEqual(thirdItem, Item{}) {
-		t.Errorf("%v != %v", thirdItem, Item{})
+	if thirdItem != nil {
+		t.Errorf("%v != %v", thirdItem, nil)
 	}
 }

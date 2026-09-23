@@ -39,17 +39,23 @@ impl<T: std::fmt::Debug> HashTable<T> {
 
   pub fn set(&mut self, key: &str, value: T) -> &mut Self {
     let bucket_index = self.hash(key);
-
-    if self.buckets[bucket_index].is_empty() {
-      self.buckets[bucket_index] = LinkedList::new();
-    }
-
     let bucket = &mut self.buckets[bucket_index];
 
-    bucket.push_back(HashTableItem {
-      key: key.to_string(),
-      value: Box::new(value),
-    });
+    let existing_item = bucket.iter_mut().find(|item| item.key == key);
+
+    match existing_item {
+      Some(item) => {
+        *item.value = value;
+      }
+      None => {
+        let new_item = HashTableItem {
+          key: key.to_string(),
+          value: Box::new(value),
+        };
+
+        bucket.push_back(new_item);
+      }
+    }
 
     return self;
   }

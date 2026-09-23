@@ -89,6 +89,33 @@ func TestGetItemsFromHashTableWithCollisions(t *testing.T) {
 	}
 }
 
+func TestSetExistingKeyUpdatesValue(t *testing.T) {
+	hashTable := NewHashTable[int](50).Set("a", 1).Set("a", 2)
+	result, ok := hashTable.Get("a")
+
+	if !reflect.DeepEqual(ok, true) {
+		t.Errorf("%v != %v", ok, true)
+	}
+
+	if !reflect.DeepEqual(result, 2) {
+		t.Errorf("%v != %v", result, 2)
+	}
+}
+
+func TestRemovesItemSetTwiceFromHashTable(t *testing.T) {
+	hashTable := NewHashTable[int](50).Set("a", 1).Set("a", 2)
+	hashTable.Remove("a")
+	result, ok := hashTable.Get("a")
+
+	if !reflect.DeepEqual(ok, false) {
+		t.Errorf("%v != %v", ok, false)
+	}
+
+	if !reflect.DeepEqual(result, 0) {
+		t.Errorf("%v != %v", result, 0)
+	}
+}
+
 func TestTriesRemoveFromEmptyHashTable(t *testing.T) {
 	hashTable := NewHashTable[int](1)
 	hashTable.Remove("a")

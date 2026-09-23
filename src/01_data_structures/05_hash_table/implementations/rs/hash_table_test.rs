@@ -26,6 +26,22 @@ mod tests {
   }
 
   #[test]
+  fn set_existing_key_updates_value() {
+    let mut hash_table: HashTable<i32> = HashTable::new(3);
+    let result = hash_table.set("a", 1).set("a", 2).get("a");
+
+    assert_eq!(result, Some(2).as_ref());
+  }
+
+  #[test]
+  fn removes_key_set_twice() {
+    let mut hash_table: HashTable<i32> = HashTable::new(3);
+    let result = hash_table.set("a", 1).set("a", 2).remove("a").get("a");
+
+    assert_eq!(result, None);
+  }
+
+  #[test]
   fn get_item_from_empty_hash_table() {
     let hash_table: HashTable<i32> = HashTable::new(10);
     let result = hash_table.get("a");
