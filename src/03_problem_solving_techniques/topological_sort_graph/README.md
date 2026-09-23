@@ -1,6 +1,6 @@
 # Topological Sort Graph
 
-Finds a valid order of tasks in Directac Acyclic Graphs (DAG).
+Finds a valid order of tasks in Directed Acyclic Graphs (DAG).
 
 ```javascript
 // Course scheduling.

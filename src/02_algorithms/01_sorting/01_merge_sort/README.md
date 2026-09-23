@@ -1,7 +1,7 @@
 # Merge Sort
 
 Divide-and-conquer sorting algorithm that recursively splits an array into smaller parts, sorts them, and merges them back together.
-Efficiency consistency across all input sizes.
+Its efficiency is consistent across all input sizes.
 Ordering is produced in the merging phase.
 
 ## Pseudocode
@@ -36,8 +36,6 @@ MERGE(left, right):
 
 The array is divided into two halves until each sub-array contains at most one element.
 Then, the sorted sub-arrays are merged by comparing elements and arranging them in order.
-Efficiency consistency across all input sizes.
-Ordering is produced in the merging phase.
 
 ## Time complexity
 

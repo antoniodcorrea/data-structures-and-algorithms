@@ -2,7 +2,7 @@
 
 ## Description
 
-A **Trie** is a _multy-way_ _ordered_ tree where each node stores one character of a string, as well as a property to mark the string ends.
+A **Trie** is a _multi-way_ _ordered_ tree where each node stores one character of a string, as well as a property to mark the string ends.
 
 Used to efficiently store and retrieve keys in a dataset of strings in autocomplete systems, prefix-based searching, dictionaries, and IP routing.
 

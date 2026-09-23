@@ -1,4 +1,4 @@
-# Two Pointer
+# Two Pointers
 
 Technique that uses two pointers to scan a sequence.
 Pointers can start at opposite ends and move toward each other, or move in the same direction.

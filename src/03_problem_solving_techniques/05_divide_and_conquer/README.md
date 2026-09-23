@@ -9,7 +9,7 @@ We need to cover these two issues:
 - The base case.
 - The procedure to break down the problem into smaller steps.
 
-The base case here would be a single item array, wich can not be summed up anymore, and thus should return its value.
+The base case here would be a single item array, which cannot be summed up anymore, and thus should return its value.
 The procedure to break down the problem would be a recursive function that breaks down the problem into smaller steps.
 
 ## Pseudocode

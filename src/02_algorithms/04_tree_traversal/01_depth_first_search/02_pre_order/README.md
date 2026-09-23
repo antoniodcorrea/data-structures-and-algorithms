@@ -7,7 +7,7 @@
     5   15  25  35
 
 Depth-First Search explores a tree by going as deep as possible along left branch first before backtracking.
-Implemented using a stack (FILO) explicitly or with recursion, wich is a implicit stack.
+Implemented using a stack (FILO) explicitly or with recursion, which is an implicit stack.
 In binary trees, Depth-First Search comes in three common variants: in-order, pre-order and post-order.
 
 - **Pre-order**: Parent → Left → Right

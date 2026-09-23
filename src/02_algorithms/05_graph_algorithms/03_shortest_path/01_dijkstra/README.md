@@ -51,7 +51,7 @@ DIJKSTRA(graph, source):
 - Start from the source node, initializing its distance to 0 and all others to infinity.
 - Get all nodes, which at this point are unvisited, and store them in an array.
 - Continue processing as long as unvisited array has items.
-- Use the node with smalles distance as current, remove it from `unvisited` array and mark it as `visited`.
+- Use the node with smallest distance as current, remove it from `unvisited` array and mark it as `visited`.
 - Iterate all neighbors of current node:
   - If is not visited, add its distance with its weight.
   - If the result is greater than its current distance, update it.

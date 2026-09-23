@@ -37,7 +37,7 @@ Good for exploring all nodes and edges in a connected component, detecting cycle
 
 ## Explanation
 
-- We use an explicit stack to simulate the recursive call stack of traditional Depth First Seach.
+- We use an explicit stack to simulate the recursive call stack of traditional Depth First Search.
 - We maintain a `visited` set to avoid revisiting the same node, which also helps prevent infinite loops in cyclic graphs.
 - The algorithm starts by pushing the `start` node onto the stack.
 - While the stack is not empty:
@@ -46,7 +46,7 @@ Good for exploring all nodes and edges in a connected component, detecting cycle
     - Mark it as visited.
     - Call the `visitNode` function (e.g., for printing, collecting, etc.).
     - Push its unvisited neighbors onto the stack.
-- We reverse the neighbor list so that the leftmost or lowest-order nodes are visited first, mimicking recursive Depth First Seach behavior.
+- We reverse the neighbor list so that the leftmost or lowest-order nodes are visited first, mimicking recursive Depth First Search behavior.
 
 This visits all nodes reachable from the starting node, using depth-first traversal order.
 

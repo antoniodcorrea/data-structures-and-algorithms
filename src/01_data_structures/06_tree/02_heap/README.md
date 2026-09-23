@@ -5,7 +5,7 @@
 Complete ordered binary tree with the restriction that the value of parent nodes are greater or equal than the value of children nodes.
 There are two types:
 
-- Max-heap: parent nodes are greater of equal than the value of children nodes.
+- Max-heap: parent nodes are greater or equal than the value of children nodes.
 - Min-heap: where the value of the parent nodes are lesser or equal than the value of the children nodes.
 
 ```
@@ -30,7 +30,7 @@ HEAP(array):
 
 ### Heapify
 
-Swaps parent and children of a specific node if neccesary.
+Swaps parent and children of a specific node if necessary.
 Utility for deletion and heap construction.
 
 ```
@@ -83,7 +83,7 @@ EXTRACT(heap):
 1. **Heap (build):** Converts an unordered array into a max heap in O(n) time.
 1. **Insert:** Adds an element at the end of the heap and reorders it to maintain the heap property.
 1. **Heapify:** Ensures that a subtree with a given root follows the max heap property.
-1. **Extract:** Removes and and returns the maximum element (root), replacing it with the last element and heapifying if necessary.
+1. **Extract:** Removes and returns the maximum element (root), replacing it with the last element and heapifying if necessary.
 
 ## Characteristics
 

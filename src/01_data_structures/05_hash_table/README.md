@@ -56,12 +56,12 @@ A hash table has three core operations:
 
 Function that maps some input of arbitrary size to a fixed-size output, which may be integers or fixed-length strings
 depending on the application.
-Hash tables use hash functions to map a key into an index within the table, tipically via modulo.
+Hash tables use hash functions to map a key into an index within the table, typically via modulo.
 Hash functions are deterministic: they must always produce the same output for the same input.
 They should aim to distribute outputs as uniquely and evenly as possible, although collisions are expected due to
 limited size of the table.
 
-There are several types of Hash Functions depending of their use case:
+There are several types of Hash Functions depending on their use case:
 
 - **General-purpose hashing**: lightweight, used in hash tables.
 - **Cryptographic hashing**: heavy, used in security, authentication and data integrity, e.g.: MD2, SHA-1, SHA-256,
@@ -101,7 +101,7 @@ There are two main strategies:
 - **Chaining**: each index stores a linked list holding key-value pairs. Each key-value pair is stored in the list that
   corresponds to the index produced by the hash of the key. To retrieve or delete it we can use the methods of the
   linked list checking for the key. Higher memory usage due to the pointers of the list.
-- **Open addressing**: each key-value pair is stored directly in the array of the hash table. When collisiong happen we
+- **Open addressing**: each key-value pair is stored directly in the array of the hash table. When collisions happen we
   look for next free position using different probing strategies (linear, quadratic, or double hashing). More
   performant, but higher implementation complexity.
 

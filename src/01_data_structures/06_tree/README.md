@@ -6,11 +6,11 @@
 
 - **Arity**: maximum number of children a node can have: binary, ternary, etc. Trees with arity greater than 2 are called "multi-way".
 - **Balanced**: A tree where the height is kept as small as possible, often by ensuring that the heights of the left and right subtrees differ by no more than one level. Efficient search, insert, and delete.
-- **Balanced Factor**: tree where each node maintains a balance factor —difference in height between left and right subtrees—. Used in trees like AVL.
-- **Full**: Binary tree in which every node has either 0 or the maximun number of children allowed.
+- **Balance Factor**: tree where each node maintains a balance factor —difference in height between left and right subtrees—. Used in trees like AVL.
+- **Full**: Binary tree in which every node has either 0 or the maximum number of children allowed.
 - **Complete**: Binary tree where all levels are completely filled except maybe the last, and where the last level is filled from left to right. E.g.: Heaps.
 - **Ordered**: The position of children matters, typically used in syntax trees or expression trees.
-- **Perfect**: Binary tree where all internal nodes have the maximum ammount of children allowed, and all leaves are at the same level. It's both full and complete.
+- **Perfect**: Binary tree where all internal nodes have the maximum amount of children allowed, and all leaves are at the same level. It's both full and complete.
 - **Degenerate/Pathological**: Tree where each parent has only one child, resembling a linked list. Worst-case performance in unbalanced Binary Search Trees.
 
 ## Types
@@ -21,7 +21,7 @@
 
 - [**Trie**](./03_trie/README.md): A tree used for storing strings, where each level represents a character of the string. Fast prefix lookups, commonly used in autocomplete systems and dictionaries. Insert and search will have a time complexity of $h$, where $h$ is the length of the word.
 
-- [**AVL Tree**](./04_AVL_tree/README.md): A self-balancing binary search tree where the heights of the left and right subtrees differ by at most one. Guarantees O(log n) time for insert, delete, and search.
+- [**AVL Tree**](./04_avl_tree/README.md): A self-balancing binary search tree where the heights of the left and right subtrees differ by at most one. Guarantees O(log n) time for insert, delete, and search.
 
 - [**B-Tree**](./05_b_tree/README.md): Self-balancing multi-way search tree where each node can have multiple keys and children. Minimizes disk reads/writes, database and file system indexing.
 

@@ -24,10 +24,10 @@ Especially useful in graph-related algorithms and problems where group membershi
 A common implementation is to use a `representatives` array to hold the trees, where "representative" means the root of each tree.
 Each index of the `representatives` array `i` refers to one node value, and each `representatives` value `representatives[i]` is the index of its representative —its tree's root—.
 
-If a value is equal to the representative it holds, this value is the representative of its group. The `representatives` array is initialized with items where all of the are their own representatives, i.e., all of them are disjoined: individual trees with one node each, being the root of each tree the only node it holds.
+If a value is equal to the representative it holds, this value is the representative of its group. The `representatives` array is initialized with items where all of them are their own representatives, i.e., all of them are disjoint: individual trees with one node each, being the root of each tree the only node it holds.
 When performing `union` representatives are added to join trees.
 
-For example, lets say we want to represent a group with three elements: {2, 5, 7}.
+For example, let's say we want to represent a group with three elements: {2, 5, 7}.
 
 ```
   2

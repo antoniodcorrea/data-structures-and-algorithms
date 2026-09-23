@@ -47,7 +47,7 @@ Inserts a value into the tree while maintaining its ordering property.
 
 ### Delete
 
-Deletes a value from the tree with in-order sucessor.
+Deletes a value from the tree with in-order successor.
 
     DELETE(node, value):
       if node is null:
@@ -66,9 +66,9 @@ Deletes a value from the tree with in-order sucessor.
         if node.right is null:
           return node.left
 
-        sucessor = GET_LEFTMOST_NODE(node.right)
-        node.value = sucessor.value
-        node.right = DELETE(node.right, sucessor.value)
+        successor = GET_LEFTMOST_NODE(node.right)
+        node.value = successor.value
+        node.right = DELETE(node.right, successor.value)
 
       return node
 
