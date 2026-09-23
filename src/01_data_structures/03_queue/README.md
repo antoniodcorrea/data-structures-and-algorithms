@@ -16,6 +16,8 @@ CREATE_QUEUE ()
 ```
 ENQUEUE (value)
   add item to storage
+
+  return QUEUE
 ```
 
 ```
@@ -32,7 +34,7 @@ LENGTH ()
 
 ```
 IS_EMPTY ()
-  if length of storage != 0
+  return length of storage == 0
 ```
 
 ```
@@ -42,11 +44,11 @@ PEEK ()
 
 ## Explanation
 
-- A queue has four methods:
+- A queue has five methods:
   - Enqueue: returns queue.
   - Dequeue: returns dequeued item.
   - Is empty: check if queue is empty.
-  - Length: get ammount of items in queue.
+  - Length: get amount of items in queue.
   - Peek: returns first item from queue without dequeuing it
 
 ## Characteristics

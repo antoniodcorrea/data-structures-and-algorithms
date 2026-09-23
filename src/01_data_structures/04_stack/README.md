@@ -1,4 +1,4 @@
-# Queue
+# Stack
 
 Dynamic linear data structure following a Last-In-First-Out (LIFO) principle: the last item added is the first to be removed.
 
@@ -15,6 +15,8 @@ CREATE_STACK ()
 ```
 PUSH (value)
   add item to storage
+
+  return STACK
 ```
 
 ```
@@ -31,7 +33,7 @@ LENGTH ()
 
 ```
 IS_EMPTY ()
-  if length of storage != 0
+  return length of storage == 0
 ```
 
 ```
@@ -41,7 +43,7 @@ PEEK ()
 
 ## Explanation
 
-- A queue has four methods:
+- A stack has five methods:
   - Push: adds an item to the top of the stack. Returns the stack.
   - Pop: removes the top item from the stack and returns it.
   - Is empty: checks if the stack is empty.
@@ -58,8 +60,8 @@ A linked list-based stack behaves similarly, with constant-time operations for b
 
 | Operation | Time Complexity |
 | --------- | --------------- |
-| Enqueue   | O(1)            |
-| Dequeue   | O(1)            |
+| Push      | O(1)            |
+| Pop       | O(1)            |
 | Is empty  | O(1)            |
 | Length    | O(1)            |
 | Peek      | O(1)            |
