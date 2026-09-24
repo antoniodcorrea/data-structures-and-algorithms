@@ -29,13 +29,9 @@ const printController = (number: number): string => {
     case number % 5 === 0:
       return 'Buzz';
     default:
-      return number.toString();
+      return `${number}`;
   }
 };
 
-export const fizzBuzz = (n: number): Array<string> => {
-  const array = Array.from({ length: n }, (_value: number, index: number) => index + 1);
-  const result = array.map(printController);
-
-  return result;
-};
+export const fizzBuzz = (n: number): Array<string> =>
+  Array.from({ length: n }, (_value, index) => index + 1).map(printController);
