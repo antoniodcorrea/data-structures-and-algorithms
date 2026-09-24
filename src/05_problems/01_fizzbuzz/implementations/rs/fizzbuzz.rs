@@ -29,8 +29,6 @@ pub fn print_controller(index: i32) -> String {
   }
 }
 
-pub fn execute_fizzbuzz() {
-  for i in 1..5 {
-    print_controller(i);
-  }
+pub fn execute_fizzbuzz(n: i32) -> Vec<String> {
+  (1..=n).map(print_controller).collect()
 }
