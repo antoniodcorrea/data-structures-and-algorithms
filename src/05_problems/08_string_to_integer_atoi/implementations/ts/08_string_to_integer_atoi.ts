@@ -1,27 +1,45 @@
+const toUnicodeValue = (char: string): number => char.charCodeAt(0) - 48;
+const isDigit = (chat: string): boolean => toUnicodeValue(chat) >= 0 && toUnicodeValue(chat) <= 9;
+
 export const stringToInteger = (s: string): number => {
-  const INT_MAX = 2 ** 31 - 1;
-  const INT_MIN = -(2 ** 31);
-  const trimmedS = s.trim();
-  const hasNegativeSign = trimmedS[0] === '-';
-  const hasPositiveSign = trimmedS[0] === '+';
-  const isPositive = hasPositiveSign || !hasNegativeSign;
-  const unsignedString = hasPositiveSign || hasNegativeSign ? trimmedS.substring(1) : trimmedS;
-  const unsignedStringArray = unsignedString.split('');
-  let result = 0;
+  const UPPER_BOUND = 2 ** 31 - 1;
+  const LOWER_BOUND = -1 * 2 ** 31;
 
-  for (let i = 0; i < unsignedStringArray.length; i++) {
-    const numberOrNan = parseInt(unsignedStringArray[i], 10);
+  const stringWithoutSpaces = s.trim();
+  const isNegative = stringWithoutSpaces[0] === '-';
+  const stringWithoutSign =
+    stringWithoutSpaces[0] === '-' || stringWithoutSpaces[0] === '+'
+      ? stringWithoutSpaces.slice(1)
+      : stringWithoutSpaces;
+  let leadingZeroes = true;
+  let number = 0;
 
-    if (!Number.isInteger(numberOrNan)) {
+  for (let i = 0; i < stringWithoutSign.length; i++) {
+    const unicodeValue = toUnicodeValue(stringWithoutSign[i]);
+    const itIsDigit = isDigit(stringWithoutSign[i]);
+
+    if (unicodeValue === 0 && leadingZeroes) {
+      continue;
+    }
+
+    if (!itIsDigit) {
       break;
     }
 
-    if (result > Math.floor((INT_MAX - numberOrNan) / 10)) {
-      return isPositive ? INT_MAX : INT_MIN;
+    if (unicodeValue !== 0) {
+      leadingZeroes = false;
     }
 
-    result = result * 10 + numberOrNan;
+    number = number * 10 + unicodeValue;
   }
 
-  return isPositive ? result : -result;
+  const resultWithSign = isNegative ? number * -1 : number;
+  const resultWithBounds =
+    resultWithSign < LOWER_BOUND
+      ? LOWER_BOUND
+      : resultWithSign > UPPER_BOUND
+        ? UPPER_BOUND
+        : resultWithSign;
+
+  return resultWithBounds;
 };
