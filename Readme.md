@@ -128,6 +128,7 @@ TypeScript, Rust and Go.
 | • [21_merge_two_sorted_lists](./src/05_problems/21_merge_two_sorted_lists)                                                       | 🟢 | ⚪ | ⚪   |
 | • [209_minimum_size_subarray_sum](./src/05_problems/209_minimum_size_subarray_sum)                                               | 🟢 | ⚪ | ⚪   |
 | • [303_range_sum_query](./src/05_problems/303_range_sum_query)                                                                   | 🟢 | ⚪ | ⚪   |
+| • [376_wiggle_subsequence](./src/05_problems/376_wiggle_subsequence)                                                             | 🟢 | ⚪ | ⚪   |
 | • [2091_removing_minimum_maximum_from_array](./src/05_problems/2091_removing_minimum_maximum_from_array)                         | 🟢 | ⚪ | ⚪   |
 | • [2461_maximum_sum_of_distinct_subarrays_with_length_k](./src/05_problems/2461_maximum_sum_of_distinct_subarrays_with_length_k) | 🟢 | ⚪ | ⚪   |
 | **Status**                                                                                                                       |    |    |      |
