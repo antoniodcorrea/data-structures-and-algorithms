@@ -1,6 +1,6 @@
 import { findMedianSortedArrays } from './04_median_of_two_sorted_arrays';
 
-describe.skip('findMedianSortedArrays', () => {
+describe('findMedianSortedArrays', () => {
   test('Returns the correct result', () => {
     const nums1 = [1, 3];
     const nums2 = [2];
