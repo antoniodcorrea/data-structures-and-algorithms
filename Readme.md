@@ -142,7 +142,7 @@ TypeScript, Rust and Go.
 ### TypeScript
 
     npm i
-    npm run test::watch
+    npm run test:watch
 
 ### Rust
 

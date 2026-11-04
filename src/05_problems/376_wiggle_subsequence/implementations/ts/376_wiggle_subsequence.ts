@@ -1,29 +1,19 @@
 export const wiggleMaxLength = (nums: number[]): number => {
-  const elements = [];
+  const acc = [];
 
   for (let i = 0; i < nums.length; i++) {
-    const last = elements[elements.length - 1];
-    const current = nums[i];
+    const last = acc[acc.length - 1];
+    const curr = nums[i];
 
-    // Same value, ignore it
-    if (elements.length >= 1 && last === current) {
-      continue;
-    }
+    if (last === curr) continue;
 
-    // Check if item added in previous iteration and the element before it differ in direction.
-    // If not, remove this item added in previous iteration.
-    if (elements.length >= 2) {
-      const lastGreaterThanItsPrevious = last > elements[elements.length - 2];
-      const currentGreaterThanLast = current > last;
+    const lastGoesUp = last > acc[acc.length - 2];
+    const currGoesUp = curr > last;
 
-      if (lastGreaterThanItsPrevious === currentGreaterThanLast) {
-        elements.pop();
-      }
-    }
+    if (acc.length >= 2 && lastGoesUp === currGoesUp) acc.pop();
 
-    // Add item of current iteration
-    elements.push(current);
+    acc.push(curr);
   }
 
-  return elements.length;
+  return acc.length;
 };
