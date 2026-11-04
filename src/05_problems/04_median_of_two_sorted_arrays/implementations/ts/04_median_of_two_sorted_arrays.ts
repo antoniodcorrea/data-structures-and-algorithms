@@ -1,9 +1,10 @@
 export const findMedianSortedArrays = (nums1: number[], nums2: number[]): number => {
+  // Accumulator for merged arrays
   const acc = [];
   let i = 0;
   let j = 0;
 
-  // Merge both arrays
+  // merge arrays
   while (i < nums1.length && j < nums2.length) {
     if (nums1[i] < nums2[j]) {
       acc.push(nums1[i]);
@@ -14,17 +15,23 @@ export const findMedianSortedArrays = (nums1: number[], nums2: number[]): number
     }
   }
 
-  // Fill accumulator with the  remaining array
-  while (i < nums1.length) acc.push(nums1[i++]);
-  while (j < nums2.length) acc.push(nums2[j++]);
+  // when one array is exhausted, add the rest to the other
+  while (i < nums1.length) {
+    acc.push(nums1[i]);
+    i++;
+  }
+  while (j < nums2.length) {
+    acc.push(nums2[j]);
+    j++;
+  }
 
-  // Check if even so we get correct median
+  // get median properly (odd/even cases)
   const even = acc.length % 2 === 0;
-  const middle = Math.floor(acc.length / 2);
+  const medianIndex = Math.floor(acc.length / 2);
 
   if (even) {
-    return (acc[middle - 1] + acc[middle]) / 2;
+    return (acc[medianIndex - 1] + acc[medianIndex]) / 2;
   } else {
-    return acc[middle];
+    return acc[medianIndex];
   }
 };

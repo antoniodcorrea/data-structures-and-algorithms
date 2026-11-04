@@ -103,7 +103,7 @@ TypeScript, Rust and Go.
 | • [02_anagram](./src/05_problems/02_anagram)                                                                                     | ⚪ | ⚪ | 🟢   |
 | • [03_array_consecutive_missing_numbers](./src/05_problems/03_array_consecutive_missing_numbers)                                 | ⚪ | ⚪ | 🟢   |
 | • [04_calculate_list_max_items_difference](./src/05_problems/04_calculate_list_max_items_difference)                             | ⚪ | ⚪ | 🟢   |
-| • [04_median_of_two_sorted_arrays](./src/05_problems/04_median_of_two_sorted_arrays)                                             | ⚪ | ⚪ | ⚪   |
+| • [04_median_of_two_sorted_arrays](./src/05_problems/04_median_of_two_sorted_arrays)                                             | ⚪ | ⚪ | 🟢   |
 | • [05_calculate_no_overlaps](./src/05_problems/05_calculate_no_overlaps)                                                         | ⚪ | ⚪ | 🟢   |
 | • [06_gigasecond](./src/05_problems/06_gigasecond)                                                                               | ⚪ | ⚪ | 🟢   |
 | • [07_linear_searching](./src/05_problems/07_linear_searching)                                                                   | ⚪ | ⚪ | 🟢   |
