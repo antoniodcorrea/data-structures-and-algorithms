@@ -1,4 +1,4 @@
-import { isPalindromeOptimal } from './09_palindrome_number';
+import { isPalindromeOptimal } from './palindrome_number';
 
 describe('isPalindrome', () => {
   test('Example 1: 121 -> true', () => {

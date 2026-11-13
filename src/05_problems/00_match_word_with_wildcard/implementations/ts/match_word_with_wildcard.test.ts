@@ -1,4 +1,4 @@
-import { matcher } from './00_match_word_with_wildcard';
+import { matcher } from './match_word_with_wildcard';
 
 describe('maxSumDistinctSubArrays', () => {
   test('Returns correct result', () => {

@@ -1,4 +1,4 @@
-import { ListNode, removeNthFromEndFastSlow, removeNthFromEndTwoPass, } from './19_remove_nth_from_end_of_list';
+import { ListNode, removeNthFromEndFastSlow, removeNthFromEndTwoPass, } from './remove_nth_from_end_of_list';
 
 
 describe('Remove nth from end of list with two pointers', () => {

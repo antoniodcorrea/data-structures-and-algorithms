@@ -1,4 +1,4 @@
-import { twoSum } from './01_two_sum';
+import { twoSum } from './two_sum';
 
 
 describe('twoSum', () => {

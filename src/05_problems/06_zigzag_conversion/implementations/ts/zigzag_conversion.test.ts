@@ -1,4 +1,4 @@
-import { zigzagConversion } from './06_zigzag_conversion';
+import { zigzagConversion } from './zigzag_conversion';
 
 
 describe('zigzagConversion', () => {

@@ -1,4 +1,4 @@
-import { removeMinMaxArray } from './2091_remove_min_max_array';
+import { removeMinMaxArray } from './remove_min_max_array';
 
 describe('removeMinMaxArray', () => {
   test('Returns the correct result', () => {

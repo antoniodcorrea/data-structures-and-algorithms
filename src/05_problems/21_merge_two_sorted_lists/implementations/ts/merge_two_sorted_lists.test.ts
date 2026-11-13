@@ -1,4 +1,4 @@
-import { ListNode, mergeTwoLists, mergeTwoListsRecursive } from './21_merge_two_sorted_lists';
+import { ListNode, mergeTwoLists, mergeTwoListsRecursive } from './merge_two_sorted_lists';
 
 describe('mergeTwoLists', () => {
   test('Returns the correct result', () => {

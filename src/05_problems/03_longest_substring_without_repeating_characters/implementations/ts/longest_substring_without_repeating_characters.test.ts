@@ -1,4 +1,4 @@
-import { longestSubstringLengthWithoutRepeatingCharacters } from './03_longest_substring_without_repeating_characters';
+import { longestSubstringLengthWithoutRepeatingCharacters } from './longest_substring_without_repeating_characters';
 
 describe('longestSubstringWithoutRepeatingCharacters', () => {
   test('Returns the correct result', () => {

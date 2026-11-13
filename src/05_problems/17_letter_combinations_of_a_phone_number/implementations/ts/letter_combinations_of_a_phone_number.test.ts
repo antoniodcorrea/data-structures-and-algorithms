@@ -1,4 +1,4 @@
-import { letterCombinations } from './17_letter_combinations_of_a_phone_number';
+import { letterCombinations } from './letter_combinations_of_a_phone_number';
 
 describe('letterCombinations', () => {
   test('Returns the correct result', () => {

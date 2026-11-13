@@ -1,4 +1,4 @@
-import { threeSumClosestOptimal } from './15_three_sum_closest';
+import { threeSumClosestOptimal } from './three_sum_closest';
 
 describe('threeSumClosest', () => {
   test('Returns the correct result', () => {

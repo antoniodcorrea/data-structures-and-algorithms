@@ -1,4 +1,4 @@
-import { addTwoNumbers, ListNode } from './01_add_two_numbers';
+import { addTwoNumbers, ListNode } from './add_two_numbers';
 
 describe('addTwoNumbers', () => {
   test('Returns the correct result', () => {

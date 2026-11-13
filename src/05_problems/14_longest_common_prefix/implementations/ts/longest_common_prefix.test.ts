@@ -1,7 +1,7 @@
 import {
   longestCommonPrefixOptimal,
   longestCommonPrefixSubOptimal,
-} from './14_longest_common_prefix';
+} from './longest_common_prefix';
 
 describe('longestCommonPrefixSubOptimal', () => {
   test('Returns the correct result', () => {

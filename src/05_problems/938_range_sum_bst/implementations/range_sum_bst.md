@@ -69,4 +69,4 @@ cargo test -- range_sum_bst
 
 ## Solution
 
-[Range Sum BST](./src/problems/range_sum_bst.rs)
+[Range Sum BST](./rs/range_sum_bst.rs)

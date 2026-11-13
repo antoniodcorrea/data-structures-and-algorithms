@@ -1,4 +1,4 @@
-import { wiggleMaxLength } from './376_wiggle_subsequence';
+import { wiggleMaxLength } from './wiggle_subsequence';
 
 describe('wiggleMaxLength', () => {
   test('Returns the correct result', () => {

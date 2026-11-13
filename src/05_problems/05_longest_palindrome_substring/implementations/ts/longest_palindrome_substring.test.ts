@@ -2,7 +2,7 @@ import {
   _test,
   longestPalindromeSubstringOptimal,
   longestPalindromeSubstringSuboptimal,
-} from './05_longest_palindrome_substring';
+} from './longest_palindrome_substring';
 
 describe('findLongestPalindromeFromCenter', () => {
   test('Returns the correct result', () => {

@@ -4,7 +4,7 @@ Graph algorithm for finding the shortest path from a starting node to all other 
 
 Unlike Dijkstra’s algorithm, Bellman-Ford works correctly when some edge weights are negative, and it can detect negative weight cycles in the graph.
 
-Uses a weighted [Edge list](/src/01_data_structures/07_graph/03_edge_list/) as a data structure, with triples instead of tuples for the weights.
+Uses a weighted [Edge list](../../../../01_data_structures/07_graph/03_edge_list/) as a data structure, with triples instead of tuples for the weights.
 
 ## Pseudocode
 

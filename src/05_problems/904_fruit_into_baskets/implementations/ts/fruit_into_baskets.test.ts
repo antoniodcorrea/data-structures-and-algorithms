@@ -1,4 +1,4 @@
-import { fruitsIntoBaskets } from './904_fruit_into_baskets';
+import { fruitsIntoBaskets } from './fruit_into_baskets';
 
 describe('fruitsIntoBaskets', () => {
   test('Returns the correct result', () => {

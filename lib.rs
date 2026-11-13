@@ -79,7 +79,7 @@ mod linear_searching;
 mod list_sum_largest_n_numbers;
 #[path = "./src/05_problems/09_mystery_algorithm/implementations/rs/mod.rs"]
 mod mystery_algorithm;
-#[path = "./src/05_problems/10_range_sum_bst/implementations/rs/mod.rs"]
+#[path = "./src/05_problems/938_range_sum_bst/implementations/rs/mod.rs"]
 mod range_sum_bst;
 #[path = "./src/05_problems/11_reverse_words_in_a_sentence/implementations/rs/mod.rs"]
 mod reverse_words_in_a_sentence;

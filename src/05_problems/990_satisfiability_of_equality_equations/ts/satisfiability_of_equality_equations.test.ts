@@ -1,4 +1,4 @@
-import { equationsPossible } from "./16_satisfiability_of_equality_equations";
+import { equationsPossible } from "./satisfiability_of_equality_equations";
 
 describe("Satisfiability of Equality Equations", () => {
   test("Does not have contradictions", () => {

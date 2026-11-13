@@ -1,4 +1,4 @@
-import { NumArray } from './303_range_sum_query';
+import { NumArray } from './range_sum_query';
 
 describe('NumArray', () => {
   test('Instantiates', () => {

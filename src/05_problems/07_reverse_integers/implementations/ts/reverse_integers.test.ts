@@ -1,4 +1,4 @@
-import { reverseIntegers } from './07_reverse_integers';
+import { reverseIntegers } from './reverse_integers';
 
 describe('reverseIntegers', () => {
   test('Returns the correct result', () => {

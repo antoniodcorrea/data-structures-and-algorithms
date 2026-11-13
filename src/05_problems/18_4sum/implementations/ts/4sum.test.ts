@@ -1,4 +1,4 @@
-import { fourSum } from './18_4sum';
+import { fourSum } from './4sum';
 
 describe('fourSum', () => {
   test('Returns the correct result', () => {

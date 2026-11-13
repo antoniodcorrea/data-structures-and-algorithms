@@ -1,4 +1,4 @@
-import { minimumSizeSubarraySumOptimal, minimumSizeSubarraySumSuboptimal, } from './209_minimum_size_subarray_sum';
+import { minimumSizeSubarraySumOptimal, minimumSizeSubarraySumSuboptimal, } from './minimum_size_subarray_sum';
 
 
 describe('minimumSizeSubarraySumSuboptimal', () => {

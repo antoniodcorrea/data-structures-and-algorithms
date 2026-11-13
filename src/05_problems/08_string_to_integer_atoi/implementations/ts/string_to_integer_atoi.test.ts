@@ -1,4 +1,4 @@
-import { stringToInteger } from './08_string_to_integer_atoi';
+import { stringToInteger } from './string_to_integer_atoi';
 
 describe('stringToInteger (atoi)', () => {
   test('converts a simple positive number', () => {
