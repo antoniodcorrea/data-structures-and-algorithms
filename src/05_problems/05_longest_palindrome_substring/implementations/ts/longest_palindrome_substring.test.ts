@@ -8,35 +8,35 @@ describe('findLongestPalindromeFromCenter', () => {
   test('Returns the correct result', () => {
     const string = 'a';
     const result = _test.findLongestPalindromeFromCenter(string, 0, 0);
-    const expectedResult = [0, 0];
+    const expectedResult = 'a';
 
     expect(result).toEqual(expectedResult);
   });
   test('Returns the correct result', () => {
     const string = 'aa';
     const result = _test.findLongestPalindromeFromCenter(string, 0, 1);
-    const expectedResult = [0, 1];
+    const expectedResult = 'aa';
 
     expect(result).toEqual(expectedResult);
   });
   test('Returns the correct result', () => {
     const string = 'abb';
     const result = _test.findLongestPalindromeFromCenter(string, 1, 1);
-    const expectedResult = [1, 1];
+    const expectedResult = 'b';
 
     expect(result).toEqual(expectedResult);
   });
   test('Returns the correct result', () => {
     const string = 'abba';
     const result = _test.findLongestPalindromeFromCenter(string, 1, 2);
-    const expectedResult = [0, 3];
+    const expectedResult = 'abba';
 
     expect(result).toEqual(expectedResult);
   });
   test('Returns the correct result', () => {
     const string = 'xabba';
     const result = _test.findLongestPalindromeFromCenter(string, 2, 3);
-    const expectedResult = [1, 4];
+    const expectedResult = 'abba';
 
     expect(result).toEqual(expectedResult);
   });

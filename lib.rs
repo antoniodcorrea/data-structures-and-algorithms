@@ -63,8 +63,6 @@ mod divide_and_conquer;
 //// Problems
 #[path = "./src/05_problems/02_anagram/implementations/rs/mod.rs"]
 mod anagram;
-#[path = "./src/05_problems/03_array_consecutive_missing_numbers/implementations/rs/mod.rs"]
-mod array_consecutive_missing_numbers;
 #[path = "./src/05_problems/04_calculate_list_max_items_difference/implementations/rs/mod.rs"]
 mod calculate_list_max_items_difference;
 #[path = "./src/05_problems/05_calculate_no_overlaps/implementations/rs/mod.rs"]
@@ -79,6 +77,8 @@ mod linear_searching;
 mod list_sum_largest_n_numbers;
 #[path = "./src/05_problems/09_mystery_algorithm/implementations/rs/mod.rs"]
 mod mystery_algorithm;
+#[path = "./src/05_problems/268_missing_number/implementations/rs/mod.rs"]
+mod missing_number;
 #[path = "./src/05_problems/938_range_sum_bst/implementations/rs/mod.rs"]
 mod range_sum_bst;
 #[path = "./src/05_problems/11_reverse_words_in_a_sentence/implementations/rs/mod.rs"]

@@ -102,7 +102,6 @@ TypeScript, Rust and Go.
 | • [01_two_sum](./src/05_problems/01_two_sum)                                                                                     | 🟢 | ⚪ | ⚪   |
 | • [02_add_two_numbers](./src/05_problems/02_add_two_numbers)                                                                     | 🟢 | ⚪ | ⚪   |
 | • [02_anagram](./src/05_problems/02_anagram)                                                                                     | ⚪ | ⚪ | 🟢   |
-| • [03_array_consecutive_missing_numbers](./src/05_problems/03_array_consecutive_missing_numbers)                                 | ⚪ | ⚪ | 🟢   |
 | • [03_longest_substring_without_repeating_characters](./src/05_problems/03_longest_substring_without_repeating_characters)       | 🟢 | ⚪ | ⚪   |
 | • [04_calculate_list_max_items_difference](./src/05_problems/04_calculate_list_max_items_difference)                             | ⚪ | ⚪ | 🟢   |
 | • [04_median_of_two_sorted_arrays](./src/05_problems/04_median_of_two_sorted_arrays)                                             | 🟢 | ⚪ | ⚪   |
@@ -130,6 +129,7 @@ TypeScript, Rust and Go.
 | • [20_valid_parentheses](./src/05_problems/20_valid_parentheses)                                                                 | 🟢 | ⚪ | ⚪   |
 | • [21_merge_two_sorted_lists](./src/05_problems/21_merge_two_sorted_lists)                                                       | 🟢 | ⚪ | ⚪   |
 | • [209_minimum_size_subarray_sum](./src/05_problems/209_minimum_size_subarray_sum)                                               | 🟢 | ⚪ | ⚪   |
+| • [268_missing_number](./src/05_problems/268_missing_number)                                                                     | ⚪ | ⚪ | ⚪   |
 | • [303_range_sum_query](./src/05_problems/303_range_sum_query)                                                                   | 🟢 | ⚪ | ⚪   |
 | • [376_wiggle_subsequence](./src/05_problems/376_wiggle_subsequence)                                                             | 🟢 | ⚪ | ⚪   |
 | • [904_fruit_into_baskets](./src/05_problems/904_fruit_into_baskets)                                                             | 🟢 | ⚪ | ⚪   |

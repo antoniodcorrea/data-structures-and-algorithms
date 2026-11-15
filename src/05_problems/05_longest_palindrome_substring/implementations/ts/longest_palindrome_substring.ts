@@ -1,32 +1,34 @@
 // O(n)
-const findLongestPalindromeFromCenter = (
-  substring: string,
-  left: number,
-  right: number,
-): [number, number] => {
-  while (substring[left] && substring[right] && substring[left] === substring[right]) {
+const findLongestPalindromeFromCenter = (s: string, left: number, right: number): string => {
+  // while left and right are within bounds, and s[left] is equal to s[right]
+  while (left >= 0 && right < s.length && s[left] === s[right]) {
+    // decrease left
     left--;
+    // increase right
     right++;
   }
 
-  return [left + 1, right - 1];
+  // return last substring from s that matched
+  return s.substring(left + 1, right);
 };
 
 // O(n²)
-export const longestPalindromeSubstringOptimal = (string: string): string => {
-  let accumulator = '';
+export const longestPalindromeSubstringOptimal = (s: string): string => {
+  let result = '';
 
-  for (let i = 0; i < string.length; i++) {
-    const [leftOdd, rightOdd] = findLongestPalindromeFromCenter(string, i, i);
-    const [leftEven, rightEven] = findLongestPalindromeFromCenter(string, i, i + 1);
-    const [left, right] =
-      rightOdd - leftOdd > rightEven - leftEven ? [leftOdd, rightOdd] : [leftEven, rightEven];
-    const palindrome = string.substring(left, right + 1);
-
-    accumulator = palindrome?.length > accumulator.length ? palindrome : accumulator;
+  // iterate i over s
+  for (let i = 0; i < s.length; i++) {
+    // var oddPalindromicSubstring is longest palindromic substring of s with i as center: odd
+    const oddPalindromicSubstring = findLongestPalindromeFromCenter(s, i, i);
+    // var evenPalindromicSubstring is longest palindromic substring of s with i and i + 1 as center: even
+    const evenPalindromicSubstring = findLongestPalindromeFromCenter(s, i, i + 1);
+    // if oddPalindromicSubstring is longer than result accumulator, replace it
+    result = oddPalindromicSubstring.length > result.length ? oddPalindromicSubstring : result;
+    // if evenPalindromicSubstring is longer than result accumulator, replace it
+    result = evenPalindromicSubstring.length > result.length ? evenPalindromicSubstring : result;
   }
 
-  return accumulator;
+  return result;
 };
 
 // ---------------------
