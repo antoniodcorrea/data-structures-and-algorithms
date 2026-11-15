@@ -132,6 +132,7 @@ TypeScript, Rust and Go.
 | • [268_missing_number](./src/05_problems/268_missing_number)                                                                     | ⚪ | ⚪ | ⚪   |
 | • [303_range_sum_query](./src/05_problems/303_range_sum_query)                                                                   | 🟢 | ⚪ | ⚪   |
 | • [376_wiggle_subsequence](./src/05_problems/376_wiggle_subsequence)                                                             | 🟢 | ⚪ | ⚪   |
+| • [409_longest_palindrome](./src/05_problems/409_longest_palindrome)                                                             | ⚪ | ⚪ | ⚪   |
 | • [904_fruit_into_baskets](./src/05_problems/904_fruit_into_baskets)                                                             | 🟢 | ⚪ | ⚪   |
 | • [938_range_sum_bst](./src/05_problems/938_range_sum_bst)                                                                       | ⚪ | ⚪ | 🟢   |
 | • [990_satisfiability_of_equality_equations](./src/05_problems/990_satisfiability_of_equality_equations)                         | 🟢 | ⚪ | ⚪   |
