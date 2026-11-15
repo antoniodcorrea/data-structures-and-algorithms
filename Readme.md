@@ -41,7 +41,7 @@ TypeScript, Rust and Go.
 | ⠀⠀⁃ [08_radix_sort](./src/02_algorithms/01_sorting/08_radix_sort)                                                                | ⚪ | ⚪ | ⚪   |
 | • [02_searching](./src/02_algorithms/02_searching)                                                                               |    |    |      |
 | ⠀⠀⁃ [01_linear_search](./src/02_algorithms/02_searching/01_linear_search)                                                        | 🟢 | ⚪ | ⚪   |
-| ⠀⠀⁃ [02_binary_search](./src/02_algorithms/02_searching/02_binary_search)                                                        | 🟢 | ⚪ | ⚪   |
+| ⠀⠀⁃ [02_binary_search](./src/02_algorithms/02_searching/02_binary_search)                                                        | 🟢 | 🟡 | ⚪   |
 | ⠀⠀⁃ [03_hash_table_lookup](./src/02_algorithms/02_searching/03_hash_table_lookup)                                                | ⚪ | ⚪ | ⚪   |
 | ⠀⠀⁃ [04_bst_search](./src/02_algorithms/02_searching/04_bst_search)                                                              | 🟢 | 🟢 | 🟢   |
 | ⠀⠀⁃ [05_trie_search](./src/02_algorithms/02_searching/05_trie_search)                                                            | 🟢 | 🟢 | 🟢   |
@@ -76,8 +76,8 @@ TypeScript, Rust and Go.
 | **Problem Solving Techniques**                                                                                                   |    |    |      |
 | • [01_two_pointers](./src/03_problem_solving_techniques/01_two_pointers)                                                         | 🟢 | ⚪ | ⚪   |
 | • [02_sliding_window](./src/03_problem_solving_techniques/02_sliding_window)                                                     | 🟢 | ⚪ | ⚪   |
-| • [03_prefix_sum](./src/03_problem_solving_techniques/03_prefix_sum)                                                             | ⚪ | ⚪ | ⚪   |
-| • [05_divide_and_conquer](./src/03_problem_solving_techniques/05_divide_and_conquer)                                             | ⚪ | ⚪ | ⚪   |
+| • [03_prefix_sum](./src/03_problem_solving_techniques/03_prefix_sum)                                                             | 🟢 | ⚪ | ⚪   |
+| • [05_divide_and_conquer](./src/03_problem_solving_techniques/05_divide_and_conquer)                                             | 🟢 | 🟢 | 🟢   |
 | • [06_greedy_algorithms](./src/03_problem_solving_techniques/06_greedy_algorithms)                                               | ⚪ | ⚪ | ⚪   |
 | • [07_recursion](./src/03_problem_solving_techniques/07_recursion)                                                               | ⚪ | ⚪ | ⚪   |
 | • [09_dynamic_programming](./src/03_problem_solving_techniques/09_dynamic_programming)                                           | ⚪ | ⚪ | ⚪   |
@@ -128,11 +128,12 @@ TypeScript, Rust and Go.
 | • [19_remove_nth_from_end_of_list](./src/05_problems/19_remove_nth_from_end_of_list)                                             | 🟢 | ⚪ | ⚪   |
 | • [20_valid_parentheses](./src/05_problems/20_valid_parentheses)                                                                 | 🟢 | ⚪ | ⚪   |
 | • [21_merge_two_sorted_lists](./src/05_problems/21_merge_two_sorted_lists)                                                       | 🟢 | ⚪ | ⚪   |
+| • [22_generate_parentheses](./src/05_problems/22_generate_parentheses)                                                           | 🟢 | ⚪ | ⚪   |
 | • [209_minimum_size_subarray_sum](./src/05_problems/209_minimum_size_subarray_sum)                                               | 🟢 | ⚪ | ⚪   |
-| • [268_missing_number](./src/05_problems/268_missing_number)                                                                     | ⚪ | ⚪ | ⚪   |
+| • [268_missing_number](./src/05_problems/268_missing_number)                                                                     | 🟢 | ⚪ | 🟢   |
 | • [303_range_sum_query](./src/05_problems/303_range_sum_query)                                                                   | 🟢 | ⚪ | ⚪   |
 | • [376_wiggle_subsequence](./src/05_problems/376_wiggle_subsequence)                                                             | 🟢 | ⚪ | ⚪   |
-| • [409_longest_palindrome](./src/05_problems/409_longest_palindrome)                                                             | ⚪ | ⚪ | ⚪   |
+| • [409_longest_palindrome](./src/05_problems/409_longest_palindrome)                                                             | 🟢 | ⚪ | ⚪   |
 | • [904_fruit_into_baskets](./src/05_problems/904_fruit_into_baskets)                                                             | 🟢 | ⚪ | ⚪   |
 | • [938_range_sum_bst](./src/05_problems/938_range_sum_bst)                                                                       | ⚪ | ⚪ | 🟢   |
 | • [990_satisfiability_of_equality_equations](./src/05_problems/990_satisfiability_of_equality_equations)                         | 🟢 | ⚪ | ⚪   |

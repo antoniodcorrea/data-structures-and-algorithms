@@ -79,8 +79,6 @@ mod list_sum_largest_n_numbers;
 mod mystery_algorithm;
 #[path = "./src/05_problems/268_missing_number/implementations/rs/mod.rs"]
 mod missing_number;
-#[path = "./src/05_problems/409_longest_palindrome/implementations/rs/mod.rs"]
-mod longest_palindrome;
 #[path = "./src/05_problems/938_range_sum_bst/implementations/rs/mod.rs"]
 mod range_sum_bst;
 #[path = "./src/05_problems/11_reverse_words_in_a_sentence/implementations/rs/mod.rs"]

@@ -1,6 +1,6 @@
 import { missingNumber } from './missing_number';
 
-describe.skip('missingNumber', () => {
+describe('missingNumber', () => {
   test('Returns the correct result', () => {
     const nums = [3, 0, 1];
     const result = missingNumber(nums);
