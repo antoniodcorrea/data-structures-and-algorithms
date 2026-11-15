@@ -2,7 +2,7 @@
 
 https://leetcode.com/problems/missing-number/
 
-Given an array `nums` containing `n` distinct numbers in the range `[0, n]`, return _the only number in the range that
+Given an array `nums` containing `n` distinct numbers in the range `[, n]`, return _the only number in the range that
 is missing from the array_.
 
 ### Example 1:
