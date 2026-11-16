@@ -139,6 +139,7 @@ TypeScript, Rust and Go.
 | • [904_fruit_into_baskets](./src/05_problems/904_fruit_into_baskets)                                                             | 🟢 | ⚪ | ⚪   |
 | • [938_range_sum_bst](./src/05_problems/938_range_sum_bst)                                                                       | ⚪ | ⚪ | 🟢   |
 | • [990_satisfiability_of_equality_equations](./src/05_problems/990_satisfiability_of_equality_equations)                         | 🟢 | ⚪ | ⚪   |
+| • [1248_count_number_of_nice_subarrays](./src/05_problems/1248_count_number_of_nice_subarrays)                                   | ⚪ | ⚪ | ⚪   |
 | • [2091_removing_minimum_maximum_from_array](./src/05_problems/2091_removing_minimum_maximum_from_array)                         | 🟢 | ⚪ | ⚪   |
 | • [2461_maximum_sum_of_distinct_subarrays_with_length_k](./src/05_problems/2461_maximum_sum_of_distinct_subarrays_with_length_k) | 🟢 | ⚪ | ⚪   |
 | **Status**                                                                                                                       |    |    |      |
