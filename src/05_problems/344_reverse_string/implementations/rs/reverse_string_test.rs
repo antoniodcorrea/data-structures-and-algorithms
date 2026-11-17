@@ -1,21 +1,28 @@
 #[cfg(test)]
 mod tests {
-  use crate::reverse_string::reverse_string::string_reverse_two;
-  use super::super::reverse_string::string_reverse_one;
+  use super::super::reverse_string::reverse_string;
 
   #[test]
-  fn string_reverse_one_works() {
-    let string = String::from("1234");
-    let reversed_string = string_reverse_one(string);
+  fn reverse_string_example_1() {
+    let mut s = vec!['h', 'e', 'l', 'l', 'o'];
+    reverse_string(&mut s);
 
-    assert_eq!(reversed_string, "4321");
+    assert_eq!(s, vec!['o', 'l', 'l', 'e', 'h']);
   }
 
   #[test]
-  fn string_reverse_two_works() {
-    let string = String::from("1234");
-    let reversed_string = string_reverse_two(string);
+  fn reverse_string_example_2() {
+    let mut s = vec!['H', 'a', 'n', 'n', 'a', 'h'];
+    reverse_string(&mut s);
 
-    assert_eq!(reversed_string, "4321");
+    assert_eq!(s, vec!['h', 'a', 'n', 'n', 'a', 'H']);
+  }
+
+  #[test]
+  fn reverse_string_single_char() {
+    let mut s = vec!['a'];
+    reverse_string(&mut s);
+
+    assert_eq!(s, vec!['a']);
   }
 }

@@ -1,19 +1,14 @@
-/*
-Given a string, reverse the order of its characters
-*/
-
-pub fn string_reverse_one(string: String) -> String {
-  string.chars().rev().collect()
+pub fn reverse_string(s: &mut Vec<char>) {
+  reverse_slice(s);
 }
 
-pub fn string_reverse_two(mut string: String) -> String {
-  if string.is_empty() {
-    string
-  } else {
-    let removed_char = string.remove(0);
-    let mut string = string_reverse_two(string);
-    string.push(removed_char);
+fn reverse_slice(s: &mut [char]) {
+  let len = s.len();
 
-    string
+  if len < 2 {
+    return;
   }
+
+  s.swap(0, len - 1);
+  reverse_slice(&mut s[1..len - 1]);
 }
