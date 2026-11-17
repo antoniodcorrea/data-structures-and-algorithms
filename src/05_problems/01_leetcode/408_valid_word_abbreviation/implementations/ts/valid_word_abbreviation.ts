@@ -1,28 +1,30 @@
 export function validWordAbbreviation(data: string, pattern: string): boolean {
-  let patternIndex = 0;
+  let i = 0;
+  let stepsToSkip = 0;
 
-  for (let targetIndex = 0; targetIndex < data.length; targetIndex++) {
-    const patternNumber = Number.parseInt(pattern[patternIndex], 10);
-    const isNumber = !Number.isNaN(patternNumber);
+  for (let j = 0; j < pattern.length; j++) {
+    const number = Number.parseInt(pattern[j], 10);
 
-    if (isNumber) {
-      if (patternNumber === 0) return false;
+    if (!Number.isNaN(number)) {
+      if (number === 0 && stepsToSkip === 0) return false;
 
-      const k = Number.parseInt(pattern.slice(patternIndex), 10);
-      patternIndex += String(k).length;
-      targetIndex += k;
+      stepsToSkip = stepsToSkip * 10 + number;
+
+      continue;
     }
 
-    if (targetIndex === data.length) {
-      break;
+    while (stepsToSkip) {
+      stepsToSkip--;
+      i++;
     }
 
-    if (pattern[patternIndex] !== data[targetIndex]) {
-      return false;
-    }
-
-    patternIndex++;
+    i++;
   }
 
-  return patternIndex === pattern.length;
+  while (stepsToSkip) {
+    stepsToSkip--;
+    i++;
+  }
+
+  return i === data.length;
 }
