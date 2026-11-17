@@ -1,6 +1,6 @@
 #[cfg(test)]
 mod test {
-  use super::super::reverse_words_in_a_sentence::reverse_words_in_a_sentence;
+  use super::super::reverse_words_in_a_string_iii::reverse_words_in_a_sentence;
 
   #[test]
   fn reverse_words_in_a_sentence_works() {

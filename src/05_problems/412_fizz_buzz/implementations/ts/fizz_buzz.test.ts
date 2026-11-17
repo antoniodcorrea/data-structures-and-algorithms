@@ -1,4 +1,4 @@
-import { fizzBuzz } from './fizzbuzz';
+import { fizzBuzz } from './fizz_buzz';
 
 describe('FizzBuzz', () => {
   // test('Returns correct result', async () => {

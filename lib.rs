@@ -65,10 +65,10 @@ mod divide_and_conquer;
 mod anagram;
 #[path = "./src/05_problems/04_calculate_list_max_items_difference/implementations/rs/mod.rs"]
 mod calculate_list_max_items_difference;
-#[path = "./src/05_problems/05_calculate_no_overlaps/implementations/rs/mod.rs"]
-mod calculate_no_overlaps;
-#[path = "./src/05_problems/01_fizzbuzz/implementations/rs/mod.rs"]
-mod fizzbuzz;
+#[path = "./src/05_problems/252_meeting_rooms/implementations/rs/mod.rs"]
+mod meeting_rooms;
+#[path = "./src/05_problems/412_fizz_buzz/implementations/rs/mod.rs"]
+mod fizz_buzz;
 #[path = "./src/05_problems/06_gigasecond/implementations/rs/mod.rs"]
 mod gigasecond;
 #[path = "./src/05_problems/07_linear_searching/implementations/rs/mod.rs"]
@@ -81,11 +81,11 @@ mod mystery_algorithm;
 mod missing_number;
 #[path = "./src/05_problems/938_range_sum_bst/implementations/rs/mod.rs"]
 mod range_sum_bst;
-#[path = "./src/05_problems/11_reverse_words_in_a_sentence/implementations/rs/mod.rs"]
-mod reverse_words_in_a_sentence;
+#[path = "./src/05_problems/557_reverse_words_in_a_string_iii/implementations/rs/mod.rs"]
+mod reverse_words_in_a_string_iii;
 #[path = "./src/05_problems/12_sort_string/implementations/rs/mod.rs"]
 mod sort_string;
 #[path = "./src/05_problems/13_string_capitalize/implementations/rs/mod.rs"]
 mod string_capitalize;
-#[path = "./src/05_problems/14_string_reverse/implementations/rs/mod.rs"]
-mod string_reverse;
+#[path = "./src/05_problems/344_reverse_string/implementations/rs/mod.rs"]
+mod reverse_string;

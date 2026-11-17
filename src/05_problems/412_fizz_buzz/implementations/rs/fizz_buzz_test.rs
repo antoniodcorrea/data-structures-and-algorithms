@@ -1,6 +1,6 @@
 #[cfg(test)]
 mod test {
-  use super::super::fizzbuzz::{execute_fizzbuzz, print_controller};
+  use super::super::fizz_buzz::{execute_fizzbuzz, print_controller};
 
   mod print_controller {
     use super::*;

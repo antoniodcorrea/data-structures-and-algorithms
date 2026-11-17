@@ -97,15 +97,12 @@ TypeScript, Rust and Go.
 | • [bitwise_xor](./src/03_problem_solving_techniques/bitwise_xor)                                                                 | ⚪ | ⚪ | ⚪   |
 | • [cyclic_sort](./src/03_problem_solving_techniques/cyclic_sort)                                                                 | ⚪ | ⚪ | ⚪   |
 | **Problems**                                                                                                                     |    |    |      |
-| • [00_match_word_with_wildcard](./src/05_problems/00_match_word_with_wildcard)                                                   | 🟢 | ⚪ | ⚪   |
-| • [01_fizzbuzz](./src/05_problems/01_fizzbuzz)                                                                                   | 🟢 | ⚪ | 🟢   |
 | • [01_two_sum](./src/05_problems/01_two_sum)                                                                                     | 🟢 | ⚪ | ⚪   |
 | • [02_add_two_numbers](./src/05_problems/02_add_two_numbers)                                                                     | 🟢 | ⚪ | ⚪   |
 | • [02_anagram](./src/05_problems/02_anagram)                                                                                     | ⚪ | ⚪ | 🟢   |
 | • [03_longest_substring_without_repeating_characters](./src/05_problems/03_longest_substring_without_repeating_characters)       | 🟢 | ⚪ | ⚪   |
 | • [04_calculate_list_max_items_difference](./src/05_problems/04_calculate_list_max_items_difference)                             | ⚪ | ⚪ | 🟢   |
 | • [04_median_of_two_sorted_arrays](./src/05_problems/04_median_of_two_sorted_arrays)                                             | 🟢 | ⚪ | ⚪   |
-| • [05_calculate_no_overlaps](./src/05_problems/05_calculate_no_overlaps)                                                         | ⚪ | ⚪ | 🟢   |
 | • [05_longest_palindrome_substring](./src/05_problems/05_longest_palindrome_substring)                                           | 🟢 | ⚪ | ⚪   |
 | • [06_gigasecond](./src/05_problems/06_gigasecond)                                                                               | ⚪ | ⚪ | 🟢   |
 | • [06_zigzag_conversion](./src/05_problems/06_zigzag_conversion)                                                                 | 🟢 | ⚪ | ⚪   |
@@ -116,11 +113,9 @@ TypeScript, Rust and Go.
 | • [09_mystery_algorithm](./src/05_problems/09_mystery_algorithm)                                                                 | ⚪ | ⚪ | 🟢   |
 | • [09_palindrome_number](./src/05_problems/09_palindrome_number)                                                                 | 🟢 | ⚪ | ⚪   |
 | • [11_container_most_water](./src/05_problems/11_container_most_water)                                                           | 🟢 | ⚪ | ⚪   |
-| • [11_reverse_words_in_a_sentence](./src/05_problems/11_reverse_words_in_a_sentence)                                             | ⚪ | ⚪ | 🟢   |
 | • [12_sort_string](./src/05_problems/12_sort_string)                                                                             | ⚪ | ⚪ | 🟢   |
 | • [13_string_capitalize](./src/05_problems/13_string_capitalize)                                                                 | ⚪ | ⚪ | 🟢   |
 | • [14_longest_common_prefix](./src/05_problems/14_longest_common_prefix)                                                         | 🟢 | ⚪ | ⚪   |
-| • [14_string_reverse](./src/05_problems/14_string_reverse)                                                                       | ⚪ | ⚪ | 🟢   |
 | • [15_three_sum](./src/05_problems/15_three_sum)                                                                                 | 🟢 | ⚪ | ⚪   |
 | • [16_three_sum_closest](./src/05_problems/16_three_sum_closest)                                                                 | 🟢 | ⚪ | ⚪   |
 | • [17_letter_combinations_of_a_phone_number](./src/05_problems/17_letter_combinations_of_a_phone_number)                         | 🟢 | ⚪ | ⚪   |
@@ -132,10 +127,15 @@ TypeScript, Rust and Go.
 | • [26_remove_duplicates_from_sorted_array](./src/05_problems/26_remove_duplicates_from_sorted_array)                             | ⚪ | ⚪ | ⚪   |
 | • [209_minimum_size_subarray_sum](./src/05_problems/209_minimum_size_subarray_sum)                                               | 🟢 | ⚪ | ⚪   |
 | • [238_product_of_array_except_self](./src/05_problems/238_product_of_array_except_self)                                         | 🟢 | ⚪ | ⚪   |
+| • [252_meeting_rooms](./src/05_problems/252_meeting_rooms)                                                                       | ⚪ | ⚪ | 🟢   |
 | • [268_missing_number](./src/05_problems/268_missing_number)                                                                     | 🟢 | ⚪ | 🟢   |
 | • [303_range_sum_query](./src/05_problems/303_range_sum_query)                                                                   | 🟢 | ⚪ | ⚪   |
+| • [344_reverse_string](./src/05_problems/344_reverse_string)                                                                     | ⚪ | ⚪ | 🟢   |
 | • [376_wiggle_subsequence](./src/05_problems/376_wiggle_subsequence)                                                             | 🟢 | ⚪ | ⚪   |
+| • [408_valid_word_abbreviation](./src/05_problems/408_valid_word_abbreviation)                                                   | 🟢 | ⚪ | ⚪   |
 | • [409_longest_palindrome](./src/05_problems/409_longest_palindrome)                                                             | 🟢 | ⚪ | ⚪   |
+| • [412_fizz_buzz](./src/05_problems/412_fizz_buzz)                                                                               | 🟢 | ⚪ | 🟢   |
+| • [557_reverse_words_in_a_string_iii](./src/05_problems/557_reverse_words_in_a_string_iii)                                       | ⚪ | ⚪ | 🟢   |
 | • [904_fruit_into_baskets](./src/05_problems/904_fruit_into_baskets)                                                             | 🟢 | ⚪ | ⚪   |
 | • [938_range_sum_bst](./src/05_problems/938_range_sum_bst)                                                                       | ⚪ | ⚪ | 🟢   |
 | • [990_satisfiability_of_equality_equations](./src/05_problems/990_satisfiability_of_equality_equations)                         | 🟢 | ⚪ | ⚪   |

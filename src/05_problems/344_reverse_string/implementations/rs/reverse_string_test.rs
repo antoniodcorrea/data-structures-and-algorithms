@@ -1,7 +1,7 @@
 #[cfg(test)]
 mod tests {
-  use crate::string_reverse::string_reverse::string_reverse_two;
-  use super::super::string_reverse::string_reverse_one;
+  use crate::reverse_string::reverse_string::string_reverse_two;
+  use super::super::reverse_string::string_reverse_one;
 
   #[test]
   fn string_reverse_one_works() {
