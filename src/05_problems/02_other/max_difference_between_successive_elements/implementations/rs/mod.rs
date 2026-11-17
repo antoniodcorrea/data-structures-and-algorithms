@@ -1,0 +1,2 @@
+pub mod max_difference_between_successive_elements;
+pub mod max_difference_between_successive_elements_test;

@@ -61,31 +61,31 @@ mod heap_sort;
 mod divide_and_conquer;
 
 //// Problems
-#[path = "./src/05_problems/02_anagram/implementations/rs/mod.rs"]
-mod anagram;
-#[path = "./src/05_problems/04_calculate_list_max_items_difference/implementations/rs/mod.rs"]
-mod calculate_list_max_items_difference;
-#[path = "./src/05_problems/252_meeting_rooms/implementations/rs/mod.rs"]
+#[path = "./src/05_problems/02_other/find_anagrams_in_candidate_list/implementations/rs/mod.rs"]
+mod find_anagrams_in_candidate_list;
+#[path = "./src/05_problems/02_other/max_difference_between_successive_elements/implementations/rs/mod.rs"]
+mod max_difference_between_successive_elements;
+#[path = "./src/05_problems/01_leetcode/252_meeting_rooms/implementations/rs/mod.rs"]
 mod meeting_rooms;
-#[path = "./src/05_problems/412_fizz_buzz/implementations/rs/mod.rs"]
+#[path = "./src/05_problems/01_leetcode/412_fizz_buzz/implementations/rs/mod.rs"]
 mod fizz_buzz;
-#[path = "./src/05_problems/06_gigasecond/implementations/rs/mod.rs"]
-mod gigasecond;
-#[path = "./src/05_problems/07_linear_searching/implementations/rs/mod.rs"]
-mod linear_searching;
-#[path = "./src/05_problems/08_list_sum_largest_n_numbers/implementations/rs/mod.rs"]
-mod list_sum_largest_n_numbers;
-#[path = "./src/05_problems/09_mystery_algorithm/implementations/rs/mod.rs"]
-mod mystery_algorithm;
-#[path = "./src/05_problems/268_missing_number/implementations/rs/mod.rs"]
+#[path = "./src/05_problems/02_other/moment_after_a_gigasecond/implementations/rs/mod.rs"]
+mod moment_after_a_gigasecond;
+#[path = "./src/05_problems/02_other/check_numbers_present_in_first_line/implementations/rs/mod.rs"]
+mod check_numbers_present_in_first_line;
+#[path = "./src/05_problems/02_other/sum_of_n_largest_elements/implementations/rs/mod.rs"]
+mod sum_of_n_largest_elements;
+#[path = "./src/05_problems/02_other/subtract_smaller_until_equal/implementations/rs/mod.rs"]
+mod subtract_smaller_until_equal;
+#[path = "./src/05_problems/01_leetcode/268_missing_number/implementations/rs/mod.rs"]
 mod missing_number;
-#[path = "./src/05_problems/938_range_sum_bst/implementations/rs/mod.rs"]
+#[path = "./src/05_problems/01_leetcode/938_range_sum_bst/implementations/rs/mod.rs"]
 mod range_sum_bst;
-#[path = "./src/05_problems/557_reverse_words_in_a_string_iii/implementations/rs/mod.rs"]
+#[path = "./src/05_problems/01_leetcode/557_reverse_words_in_a_string_iii/implementations/rs/mod.rs"]
 mod reverse_words_in_a_string_iii;
-#[path = "./src/05_problems/12_sort_string/implementations/rs/mod.rs"]
-mod sort_string;
-#[path = "./src/05_problems/13_string_capitalize/implementations/rs/mod.rs"]
-mod string_capitalize;
-#[path = "./src/05_problems/344_reverse_string/implementations/rs/mod.rs"]
+#[path = "./src/05_problems/02_other/sort_words_uppercase_first/implementations/rs/mod.rs"]
+mod sort_words_uppercase_first;
+#[path = "./src/05_problems/02_other/capitalize_first_character_of_string/implementations/rs/mod.rs"]
+mod capitalize_first_character_of_string;
+#[path = "./src/05_problems/01_leetcode/344_reverse_string/implementations/rs/mod.rs"]
 mod reverse_string;

@@ -89,5 +89,5 @@ Output: `9` (from subarray `[5, 1, 3]`)
 
 ## Problems
 
-- [2461_maximum_sum_of_distinct_subarrays_with_length_k](../../05_problems/2461_maximum_sum_of_distinct_subarrays_with_length_k)
-- [209_minimum_size_subarray_sum](../../05_problems/209_minimum_size_subarray_sum)
+- [2461_maximum_sum_of_distinct_subarrays_with_length_k](../../05_problems/01_leetcode/2461_maximum_sum_of_distinct_subarrays_with_length_k)
+- [209_minimum_size_subarray_sum](../../05_problems/01_leetcode/209_minimum_size_subarray_sum)
