@@ -1,51 +1,114 @@
-import { matcher } from './valid_word_abbreviation';
+import { validWordAbbreviation } from './valid_word_abbreviation';
 
-describe('maxSumDistinctSubArrays', () => {
+describe('validWordAbbreviation', () => {
   test('Returns correct result', () => {
-    const result = matcher('datadog', 'datadog');
+    const result = validWordAbbreviation('datadog', 'datadog');
     const expectedResult = true;
 
     expect(result).toEqual(expectedResult);
   });
 
   test('Returns correct result', () => {
-    const result = matcher('datadogs', 'datadog');
+    const result = validWordAbbreviation('datadog', 'datadogs');
     const expectedResult = false;
 
     expect(result).toEqual(expectedResult);
   });
 
   test('Returns correct result', () => {
-    const result = matcher('datadog', 'datadogs');
+    const result = validWordAbbreviation('datadogs', 'datadog');
     const expectedResult = false;
 
     expect(result).toEqual(expectedResult);
   });
 
   test('Returns correct result', () => {
-    const result = matcher('3', 'abc');
+    const result = validWordAbbreviation('abc', '3');
     const expectedResult = true;
 
     expect(result).toEqual(expectedResult);
   });
 
   test('Returns correct result', () => {
-    const result = matcher('3', 'abcd');
+    const result = validWordAbbreviation('abcd', '3');
     const expectedResult = false;
 
     expect(result).toEqual(expectedResult);
   });
 
   test('Returns correct result', () => {
-    const result = matcher('d3dog', 'datadog');
+    const result = validWordAbbreviation('datadog', 'd3dog');
     const expectedResult = true;
 
     expect(result).toEqual(expectedResult);
   });
 
   test('Returns correct result', () => {
-    const result = matcher('d2a2g', 'datadog');
+    const result = validWordAbbreviation('datadog', 'd2a2g');
     const expectedResult = true;
+
+    expect(result).toEqual(expectedResult);
+  });
+
+  test('Returns correct result', () => {
+    const result = validWordAbbreviation('internationalization', 'i12iz4n');
+    const expectedResult = true;
+
+    expect(result).toEqual(expectedResult);
+  });
+
+  test('Returns correct result', () => {
+    const result = validWordAbbreviation('apple', 'a2e');
+    const expectedResult = false;
+
+    expect(result).toEqual(expectedResult);
+  });
+
+  test('Returns correct result', () => {
+    const result = validWordAbbreviation('substitution', 's10n');
+    const expectedResult = true;
+
+    expect(result).toEqual(expectedResult);
+  });
+
+  test('Returns correct result', () => {
+    const result = validWordAbbreviation('substitution', '12');
+    const expectedResult = true;
+
+    expect(result).toEqual(expectedResult);
+  });
+
+  test('Returns correct result', () => {
+    const result = validWordAbbreviation('substitution', 's010n');
+    const expectedResult = false;
+
+    expect(result).toEqual(expectedResult);
+  });
+
+  test('Returns correct result', () => {
+    const result = validWordAbbreviation('substitution', 's0ubstitution');
+    const expectedResult = false;
+
+    expect(result).toEqual(expectedResult);
+  });
+
+  test('Returns correct result', () => {
+    const result = validWordAbbreviation('a', '2');
+    const expectedResult = false;
+
+    expect(result).toEqual(expectedResult);
+  });
+
+  test('Returns correct result', () => {
+    const result = validWordAbbreviation('a', '01');
+    const expectedResult = false;
+
+    expect(result).toEqual(expectedResult);
+  });
+
+  test('Returns correct result', () => {
+    const result = validWordAbbreviation('a', 'a999999999');
+    const expectedResult = false;
 
     expect(result).toEqual(expectedResult);
   });
