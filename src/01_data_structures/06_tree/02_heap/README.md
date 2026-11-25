@@ -2,7 +2,8 @@
 
 ## Description
 
-Complete ordered binary tree with the restriction that the value of parent nodes are greater or equal than the value of children nodes.
+Complete ordered binary tree with the restriction that the value of parent nodes are greater or equal than the value of
+children nodes.
 There are two types:
 
 - Max-heap: parent nodes are greater or equal than the value of children nodes.
@@ -15,6 +16,8 @@ Min Heap: Parent <= children
 
 Commonly used in `priority queues` and `heapsort` algorithms.
 Typically implemented with arrays, as they are complete trees.
+
+The pseudocode below describes the max heap. The min heap is the same with the comparisons reversed.
 
 ## Pseudocode
 
@@ -80,23 +83,24 @@ EXTRACT(heap):
 
 ## Explanation
 
-1. **Heap (build):** Converts an unordered array into a max heap in O(n) time.
+1. **Heap (build):** Converts an unordered array into a max heap in O (n) time.
 1. **Insert:** Adds an element at the end of the heap and reorders it to maintain the heap property.
 1. **Heapify:** Ensures that a subtree with a given root follows the max heap property.
-1. **Extract:** Removes and returns the maximum element (root), replacing it with the last element and heapifying if necessary.
+1. **Extract:** Removes and returns the maximum element (root), replacing it with the last element and heapifying if
+   necessary.
 
 ## Characteristics
 
 ### Time Complexity:
 
-- Insertion: O(log n).
-- Heapify: O(log n).
-- Extract Max: O(log n).
-- Heap (build): O(n).
+- Insertion: O (log n).
+- Heapify: O (log n).
+- Extract Max: O (log n).
+- Heap (build): O (n).
 
 ### Space Complexity:
 
-- O(1) for in-place heap operations
+- O (1) for in-place heap operations
 
 ## Example
 

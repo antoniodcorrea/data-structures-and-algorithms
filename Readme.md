@@ -46,8 +46,8 @@ TypeScript, Rust and Go.
 | ⠀⠀⁃ [03_hash_table_lookup](./src/02_algorithms/02_searching/03_hash_table_lookup)                                                              | ⚪ | ⚪ | ⚪   |
 | ⠀⠀⁃ [04_bst_search](./src/02_algorithms/02_searching/04_bst_search)                                                                            | 🟢 | 🟢 | 🟢   |
 | ⠀⠀⁃ [05_trie_search](./src/02_algorithms/02_searching/05_trie_search)                                                                          | 🟢 | 🟢 | 🟢   |
-| ⠀⠀⁃ [06_depth_first_search](./src/02_algorithms/02_searching/06_depth_first_search)                                                            | 🟢 | 🟢 | 🟢   |
-| ⠀⠀⁃ [07_breadth_first_search](./src/02_algorithms/02_searching/07_breadth_first_search)                                                        | 🟢 | 🟢 | 🟢   |
+| ⠀⠀⁃ [06_depth_first_search](./src/02_algorithms/02_searching/06_depth_first_search)                                                            | 🟢 | ⚪ | ⚪   |
+| ⠀⠀⁃ [07_breadth_first_search](./src/02_algorithms/02_searching/07_breadth_first_search)                                                        | 🟢 | ⚪ | ⚪   |
 | • [03_bit_manipulation](./src/02_algorithms/03_bit_manipulation)                                                                               |    |    |      |
 | • [04_tree_traversal](./src/02_algorithms/04_tree_traversal/)                                                                                  |    |    |      |
 | ⠀⠀⁃ [01_depth_first_search](./src/02_algorithms/04_tree_traversal/01_depth_first_search)                                                       |    |    |      |
@@ -97,6 +97,9 @@ TypeScript, Rust and Go.
 | • [knapsack_dynamic_programming](./src/03_problem_solving_techniques/knapsack_dynamic_programming)                                             | ⚪ | ⚪ | ⚪   |
 | • [bitwise_xor](./src/03_problem_solving_techniques/bitwise_xor)                                                                               | ⚪ | ⚪ | ⚪   |
 | • [cyclic_sort](./src/03_problem_solving_techniques/cyclic_sort)                                                                               | ⚪ | ⚪ | ⚪   |
+| **Tricks**                                                                                                                                     |    |    |      |
+| • [01_transpose](./src/04_tricks/01_transpose)                                                                                                 | 🟢 | ⚪ | ⚪   |
+| • [02_cartesian_product](./src/04_tricks/02_cartesian_product)                                                                                 | 🟢 | ⚪ | ⚪   |
 | **Problems**                                                                                                                                   |    |    |      |
 | • [01_leetcode](./src/05_problems/01_leetcode)                                                                                                 |    |    |      |
 | ⠀⠀⁃ [01_two_sum](./src/05_problems/01_leetcode/01_two_sum)                                                                                     | 🟢 | ⚪ | ⚪   |
@@ -118,12 +121,16 @@ TypeScript, Rust and Go.
 | ⠀⠀⁃ [20_valid_parentheses](./src/05_problems/01_leetcode/20_valid_parentheses)                                                                 | 🟢 | ⚪ | ⚪   |
 | ⠀⠀⁃ [21_merge_two_sorted_lists](./src/05_problems/01_leetcode/21_merge_two_sorted_lists)                                                       | 🟢 | ⚪ | ⚪   |
 | ⠀⠀⁃ [22_generate_parentheses](./src/05_problems/01_leetcode/22_generate_parentheses)                                                           | 🟢 | ⚪ | ⚪   |
-| ⠀⠀⁃ [26_remove_duplicates_from_sorted_array](./src/05_problems/01_leetcode/26_remove_duplicates_from_sorted_array)                             | ⚪ | ⚪ | ⚪   |
+| ⠀⠀⁃ [26_remove_duplicates_from_sorted_array](./src/05_problems/01_leetcode/26_remove_duplicates_from_sorted_array)                             | 🟢 | ⚪ | ⚪   |
+| ⠀⠀⁃ [56_merge_intervals](./src/05_problems/01_leetcode/56_merge_intervals)                                                                     | 🟢 | ⚪ | ⚪   |
+| ⠀⠀⁃ [200_number_of_islands](./src/05_problems/01_leetcode/200_number_of_islands)                                                               | 🟢 | ⚪ | ⚪   |
 | ⠀⠀⁃ [209_minimum_size_subarray_sum](./src/05_problems/01_leetcode/209_minimum_size_subarray_sum)                                               | 🟢 | ⚪ | ⚪   |
 | ⠀⠀⁃ [238_product_of_array_except_self](./src/05_problems/01_leetcode/238_product_of_array_except_self)                                         | 🟢 | ⚪ | ⚪   |
 | ⠀⠀⁃ [252_meeting_rooms](./src/05_problems/01_leetcode/252_meeting_rooms)                                                                       | ⚪ | ⚪ | 🟢   |
+| ⠀⠀⁃ [253_meeting_rooms_ii](./src/05_problems/01_leetcode/253_meeting_rooms_ii)                                                                 | 🟢 | ⚪ | ⚪   |
 | ⠀⠀⁃ [268_missing_number](./src/05_problems/01_leetcode/268_missing_number)                                                                     | 🟢 | ⚪ | 🟢   |
 | ⠀⠀⁃ [303_range_sum_query](./src/05_problems/01_leetcode/303_range_sum_query)                                                                   | 🟢 | ⚪ | ⚪   |
+| ⠀⠀⁃ [340_longest_substring_with_at_most_k_distinct_characters](./src/05_problems/01_leetcode/340_longest_substring_with_at_most_k_distinct_characters)| 🟢 | ⚪ | ⚪   |
 | ⠀⠀⁃ [344_reverse_string](./src/05_problems/01_leetcode/344_reverse_string)                                                                     | ⚪ | ⚪ | 🟢   |
 | ⠀⠀⁃ [376_wiggle_subsequence](./src/05_problems/01_leetcode/376_wiggle_subsequence)                                                             | 🟢 | ⚪ | ⚪   |
 | ⠀⠀⁃ [408_valid_word_abbreviation](./src/05_problems/01_leetcode/408_valid_word_abbreviation)                                                   | 🟢 | ⚪ | ⚪   |
@@ -133,7 +140,7 @@ TypeScript, Rust and Go.
 | ⠀⠀⁃ [904_fruit_into_baskets](./src/05_problems/01_leetcode/904_fruit_into_baskets)                                                             | 🟢 | ⚪ | ⚪   |
 | ⠀⠀⁃ [938_range_sum_bst](./src/05_problems/01_leetcode/938_range_sum_bst)                                                                       | ⚪ | ⚪ | 🟢   |
 | ⠀⠀⁃ [990_satisfiability_of_equality_equations](./src/05_problems/01_leetcode/990_satisfiability_of_equality_equations)                         | 🟢 | ⚪ | ⚪   |
-| ⠀⠀⁃ [1248_count_number_of_nice_subarrays](./src/05_problems/01_leetcode/1248_count_number_of_nice_subarrays)                                   | ⚪ | ⚪ | ⚪   |
+| ⠀⠀⁃ [1248_count_number_of_nice_subarrays](./src/05_problems/01_leetcode/1248_count_number_of_nice_subarrays)                                   | 🟢 | ⚪ | ⚪   |
 | ⠀⠀⁃ [2091_removing_minimum_maximum_from_array](./src/05_problems/01_leetcode/2091_removing_minimum_maximum_from_array)                         | 🟢 | ⚪ | ⚪   |
 | ⠀⠀⁃ [2461_maximum_sum_of_distinct_subarrays_with_length_k](./src/05_problems/01_leetcode/2461_maximum_sum_of_distinct_subarrays_with_length_k) | 🟢 | ⚪ | ⚪   |
 | • [02_other](./src/05_problems/02_other)                                                                                                       |    |    |      |
