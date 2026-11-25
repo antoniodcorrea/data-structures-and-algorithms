@@ -1,8 +1,6 @@
 #[cfg(test)]
 mod tests {
-  use crate::heap::heap::{extract, heap, heapify, insert};
-
-  use super::super::heap::parent;
+  use crate::heap::max_heap::{extract_max, insert_max, max_heap, max_heapify, parent};
 
   #[test]
   fn computes_parent_of_second_element() {
@@ -105,7 +103,7 @@ mod tests {
     //     4  2 10
     let mut array = vec![3, 5, 1, 4, 2, 10];
     let array_length = array.len();
-    heapify(&mut array, 2, array_length);
+    max_heapify(&mut array, 2, array_length);
 
     assert_eq!(array, [3, 5, 10, 4, 2, 1]);
   }
@@ -118,7 +116,7 @@ mod tests {
     //     4  2  1
     let mut array = vec![3, 5, 10, 4, 2, 1];
     let array_length = array.len();
-    heapify(&mut array, 1, array_length);
+    max_heapify(&mut array, 1, array_length);
 
     assert_eq!(array, [3, 5, 10, 4, 2, 1]);
   }
@@ -131,7 +129,7 @@ mod tests {
     //     4  2 1
     let mut array = vec![3, 5, 10, 4, 2, 1];
     let array_length = array.len();
-    heapify(&mut array, 0, array_length);
+    max_heapify(&mut array, 0, array_length);
 
     assert_eq!(array, [10, 5, 3, 4, 2, 1]);
   }
@@ -139,7 +137,7 @@ mod tests {
   fn builds_first_heap_correctly() {
     let mut array = vec![3, 5, 1, 4, 2, 10];
 
-    heap(&mut array);
+    max_heap(&mut array);
     //      10
     //     /  \
     //    5    3
@@ -151,7 +149,7 @@ mod tests {
   fn builds_second_heap_correctly() {
     let mut array = vec![3, 5, 1, 4, 2];
 
-    heap(&mut array);
+    max_heap(&mut array);
     //       5
     //     /  \
     //    4    1
@@ -163,7 +161,7 @@ mod tests {
   fn builds_third_heap_correctly() {
     let mut array = vec![0, 2, 4, 6, 8, 1, 3, 5, 7];
 
-    heap(&mut array);
+    max_heap(&mut array);
     //          8
     //        /  \
     //       7    4
@@ -178,7 +176,7 @@ mod tests {
   fn inserts_into_heap_correctly() {
     let mut array = vec![3, 2, 4, 1];
 
-    heap(&mut array);
+    max_heap(&mut array);
     //          4
     //        /  \
     //       2    3
@@ -186,7 +184,7 @@ mod tests {
     //     1
     assert_eq!(array, [4, 2, 3, 1]);
 
-    insert(&mut array, 5);
+    insert_max(&mut array, 5);
     //          5
     //        /  \
     //       4    3
@@ -199,7 +197,7 @@ mod tests {
   fn extracts_max_value_from_heap_correctly() {
     let mut array = vec![1, 2, 3, 4, 5];
 
-    heap(&mut array);
+    max_heap(&mut array);
     //          5
     //        /  \
     //       4    3
@@ -207,7 +205,7 @@ mod tests {
     //     1  2
     assert_eq!(array, [5, 4, 3, 1, 2]);
 
-    let extracted_value = extract(&mut array);
+    let extracted_value = extract_max(&mut array);
     //          4
     //        /  \
     //       2    3

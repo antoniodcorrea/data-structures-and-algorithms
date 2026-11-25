@@ -1,12 +1,16 @@
-pub fn heap(array: &mut Vec<i32>) {
+pub fn parent(index: usize) -> usize {
+  (index - 1) / 2 // Implicitly rounded down
+}
+
+pub fn max_heap(array: &mut Vec<i32>) {
   let heap_size = array.len();
 
   for i in (0..heap_size / 2).rev() {
-    heapify(array, i, heap_size);
+    max_heapify(array, i, heap_size);
   }
 }
 
-pub fn heapify(heap: &mut Vec<i32>, i: usize, heap_size: usize) {
+pub fn max_heapify(heap: &mut Vec<i32>, i: usize, heap_size: usize) {
   let mut largest = i;
   let left = 2 * i + 1;
   let right = 2 * i + 2;
@@ -21,15 +25,11 @@ pub fn heapify(heap: &mut Vec<i32>, i: usize, heap_size: usize) {
 
   if largest != i {
     heap.swap(i, largest);
-    heapify(heap, largest, heap_size);
+    max_heapify(heap, largest, heap_size);
   }
 }
 
-pub fn parent(index: usize) -> usize {
-  (index - 1) / 2 // Implicitly rounded down
-}
-
-pub fn insert(heap: &mut Vec<i32>, value: i32) {
+pub fn insert_max(heap: &mut Vec<i32>, value: i32) {
   heap.push(value);
   let mut index = heap.len() - 1;
 
@@ -39,14 +39,14 @@ pub fn insert(heap: &mut Vec<i32>, value: i32) {
   }
 }
 
-pub fn extract(heap: &mut Vec<i32>) -> Option<i32> {
+pub fn extract_max(heap: &mut Vec<i32>) -> Option<i32> {
   if heap.len() == 0 {
     return None;
   } else {
     let max_val = heap[0];
     heap[0] = heap[heap.len() - 1];
     heap.pop();
-    heapify(heap, 0, heap.len());
+    max_heapify(heap, 0, heap.len());
 
     Some(max_val)
   }
