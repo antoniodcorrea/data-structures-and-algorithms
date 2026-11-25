@@ -29,7 +29,7 @@ TypeScript, Rust and Go.
 | ⠀⠀⁃ [03_edge_list](./src/01_data_structures/07_graph/03_edge_list)                                                                             | 🟢 | ⚪ | ⚪   |
 | ⠀⠀⁃ [04_directed_acyclic_graph](./src/01_data_structures/07_graph/04_directed_acyclic_graph)                                                   | ⚪ | ⚪ | ⚪   |
 | • [08_disjoint_set_union_find](./src/01_data_structures/08_disjoint_set_union_find)                                                            | 🟢 | 🟢 | 🟢   |
-| • [09_priority_queue](./src/01_data_structures/09_priority_queue)                                                                              | 🟢 | ⚪ | ⚪   |
+| • [09_priority_queue](./src/01_data_structures/09_priority_queue)                                                                              | 🟢 | 🟢 | ⚪   |
 | **Algorithms**                                                                                                                                 |    |    |      |
 | • [01_sorting](./src/02_algorithms/01_sorting)                                                                                                 |    |    |      |
 | ⠀⠀⁃ [01_merge_sort](./src/02_algorithms/01_sorting/01_merge_sort)                                                                              | 🟢 | 🟢 | 🟢   |

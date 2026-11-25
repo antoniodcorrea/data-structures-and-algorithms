@@ -5,122 +5,14 @@ import (
 	"testing"
 )
 
-func TestComputesParentOfSecondElement(t *testing.T) {
-	//          8
-	//        /  \
-	//       7←   4
-	//      / \  / \
-	//     6  2 1   3
-	//    / \
-	//   5   0
-	parentIndex := Parent(1)
-	expected := 0
-
-	if !reflect.DeepEqual(parentIndex, expected) {
-		t.Errorf("left = %v; right %v", parentIndex, expected)
-	}
-}
-func TestComputesParentOfThirdElement(t *testing.T) {
-	//          8
-	//        /  \
-	//       7    4←
-	//      / \  / \
-	//     6  2 1   3
-	//    / \
-	//   5   0
-	parentIndex := Parent(2)
-	expected := 0
-
-	if !reflect.DeepEqual(parentIndex, expected) {
-		t.Errorf("left = %v; right %v", parentIndex, expected)
-	}
-}
-
-func TestComputesParentOfFourthElement(t *testing.T) {
-	//          8
-	//        /  \
-	//       7    4
-	//      / \  / \
-	//     6← 2 1   3
-	//    / \
-	//   5   0
-	parentIndex := Parent(3)
-	expected := 1
-
-	if !reflect.DeepEqual(parentIndex, expected) {
-		t.Errorf("left = %v; right %v", parentIndex, expected)
-	}
-}
-func TestComputesParentOfFifthElement(t *testing.T) {
-	//          8
-	//        /  \
-	//       7    4
-	//      / \  / \
-	//     6  2←1   3
-	//    / \
-	//   5   0
-	parentIndex := Parent(4)
-	expected := 1
-
-	if !reflect.DeepEqual(parentIndex, expected) {
-		t.Errorf("left = %v; right %v", parentIndex, expected)
-	}
-}
-func TestComputesParentOfSixthElement(t *testing.T) {
-	//          8
-	//        /  \
-	//       7    4
-	//      / \  / \
-	//     6  2 1←  3
-	//    / \
-	//   5   0
-	parentIndex := Parent(5)
-	expected := 2
-
-	if !reflect.DeepEqual(parentIndex, expected) {
-		t.Errorf("left = %v; right %v", parentIndex, expected)
-	}
-}
-func TestComputesParentOfSeventhElement(t *testing.T) {
-	//          8
-	//        /  \
-	//       7    4
-	//      / \  / \
-	//     6  2 1   3←
-	//    / \
-	//   5   0
-	parentIndex := Parent(6)
-	expected := 2
-
-	if !reflect.DeepEqual(parentIndex, expected) {
-		t.Errorf("left = %v; right %v", parentIndex, expected)
-	}
-}
-
-func TestComputesParentOfEigthElement(t *testing.T) {
-	//          8
-	//        /  \
-	//       7    4
-	//      / \  / \
-	//     6  2 1   3
-	//    / \
-	//   5←  0
-	parentIndex := Parent(7)
-	expected := 3
-
-	if !reflect.DeepEqual(parentIndex, expected) {
-		t.Errorf("left = %v; right %v", parentIndex, expected)
-	}
-}
-
-func TestHeapifiesFirstNonLeafNode(t *testing.T) {
+func TestMaxHeapifiesFirstNonLeafNode(t *testing.T) {
 	//          3
 	//        /  \
 	//       5    1←
 	//      / \  / swap
 	//     4  2 10
 	array := []int{3, 5, 1, 4, 2, 10}
-	Heapify(array, 2, len(array))
+	MaxHeapify(array, 2, len(array))
 
 	expected := []int{3, 5, 10, 4, 2, 1}
 
@@ -129,14 +21,14 @@ func TestHeapifiesFirstNonLeafNode(t *testing.T) {
 	}
 }
 
-func TestHeapifiesSecondNonLeafNode(t *testing.T) {
+func TestMaxHeapifiesSecondNonLeafNode(t *testing.T) {
 	//          3
 	//        /  \
 	//       5←  10
 	//   ok / \  /
 	//     4  2  1
 	array := []int{3, 5, 10, 4, 2, 1}
-	Heapify(array, 1, len(array))
+	MaxHeapify(array, 1, len(array))
 
 	expected := []int{3, 5, 10, 4, 2, 1}
 
@@ -144,14 +36,14 @@ func TestHeapifiesSecondNonLeafNode(t *testing.T) {
 		t.Errorf("\nleft = %v \nright = %v", array, expected)
 	}
 }
-func TestHeapifiesThirdNonLeafNode(t *testing.T) {
+func TestMaxHeapifiesThirdNonLeafNode(t *testing.T) {
 	//         10←
 	//        /  \ swap
 	//       5    3
 	//      / \  /
 	//     4  2 1
 	array := []int{3, 5, 10, 4, 2, 1}
-	Heapify(array, 0, len(array))
+	MaxHeapify(array, 0, len(array))
 
 	expected := []int{10, 5, 3, 4, 2, 1}
 
@@ -159,9 +51,9 @@ func TestHeapifiesThirdNonLeafNode(t *testing.T) {
 		t.Errorf("\nleft = %v \nright = %v", array, expected)
 	}
 }
-func TestBuildsFirstHeapCorrectly(t *testing.T) {
+func TestMaxBuildsFirstHeapCorrectly(t *testing.T) {
 	array := []int{3, 5, 1, 4, 2, 10}
-	Heap(array)
+	MaxHeap(array)
 	//      10
 	//     /  \
 	//    5    3
@@ -173,9 +65,9 @@ func TestBuildsFirstHeapCorrectly(t *testing.T) {
 		t.Errorf("\nleft = %v \nright = %v", array, expected)
 	}
 }
-func TestBuildsSecondHeapCorrectly(t *testing.T) {
+func TestMaxBuildsSecondHeapCorrectly(t *testing.T) {
 	array := []int{3, 5, 1, 4, 2}
-	Heap(array)
+	MaxHeap(array)
 	//       5
 	//     /  \
 	//    4    1
@@ -187,9 +79,9 @@ func TestBuildsSecondHeapCorrectly(t *testing.T) {
 		t.Errorf("\nleft = %v \nright = %v", array, expected)
 	}
 }
-func TestBuildsThirdHeapCorrectly(t *testing.T) {
+func TestMaxBuildsThirdHeapCorrectly(t *testing.T) {
 	array := []int{0, 2, 4, 6, 8, 1, 3, 5, 7}
-	Heap(array)
+	MaxHeap(array)
 	//          8
 	//        /  \
 	//       7    4
@@ -204,9 +96,9 @@ func TestBuildsThirdHeapCorrectly(t *testing.T) {
 	}
 }
 
-func TestInsertsIntoHeapCorrectly(t *testing.T) {
+func TestMaxInsertsIntoHeapCorrectly(t *testing.T) {
 	array := []int{3, 2, 4, 1}
-	Heap(array)
+	MaxHeap(array)
 	//          4
 	//        /  \
 	//       2    3
@@ -218,7 +110,7 @@ func TestInsertsIntoHeapCorrectly(t *testing.T) {
 		t.Errorf("\nleft = %v \nright = %v", array, expected)
 	}
 
-	Insert(&array, 5)
+	InsertMax(&array, 5)
 	// //          5
 	// //        /  \
 	// //       4    3
@@ -230,11 +122,11 @@ func TestInsertsIntoHeapCorrectly(t *testing.T) {
 	}
 }
 
-func TestExtractFromEmptyHeapCorrectly(t *testing.T) {
+func TestMaxExtractFromEmptyHeapCorrectly(t *testing.T) {
 	heap := []int{}
 	expectedExtractedValue := 0
 	expectedHeap := []int{}
-	extracted_value, err := Extract(&heap)
+	extracted_value, err := ExtractMax(&heap)
 
 	if err != nil {
 		if !reflect.DeepEqual(extracted_value, expectedExtractedValue) {
@@ -246,9 +138,9 @@ func TestExtractFromEmptyHeapCorrectly(t *testing.T) {
 	}
 }
 
-func TestExtractFromHeapCorrectly(t *testing.T) {
+func TestMaxExtractFromHeapCorrectly(t *testing.T) {
 	array := []int{1, 2, 3, 4, 5}
-	Heap(array)
+	MaxHeap(array)
 	//          5
 	//        /  \
 	//       4    3
@@ -260,7 +152,7 @@ func TestExtractFromHeapCorrectly(t *testing.T) {
 		t.Errorf("\nleft = %v \nright = %v", array, expected)
 	}
 
-	extracted_value, err := Extract(&array)
+	extracted_value, err := ExtractMax(&array)
 	if err != nil {
 		t.Errorf("No value to extract: %v", err)
 	}
