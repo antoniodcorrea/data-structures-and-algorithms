@@ -1,4 +1,4 @@
-import { MinPriorityQueue } from './minPriorityQueue';
+import { MinPriorityQueue } from '../../../../../01_data_structures/09_priority_queue/implementations/ts/min_priority_queue';
 
 // Two pointers: compares each start with the earliest end whose room has not been reused yet.
 // Time: O(n log n). Space: O(n).

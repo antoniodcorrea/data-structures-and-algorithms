@@ -1,4 +1,4 @@
-import { extract, heap, heapify, insert, parent } from "./heap";
+import { extractMax, insertMax, maxHeap, maxHeapify, parent } from "./max_heap";
 
 describe("parent()", () => {
   test("computes correct parent index for child index", async () => {
@@ -99,7 +99,7 @@ describe("parent()", () => {
   });
 });
 
-describe("heapify()", () => {
+describe("maxHeapify()", () => {
   test("heapify first non-leaf node", async () => {
     //          3
     //        /  \
@@ -107,7 +107,7 @@ describe("heapify()", () => {
     //      / \  / swap
     //     4  2 10
     const array = [3, 5, 1, 4, 2, 10];
-    heapify(array, 2, array.length);
+    maxHeapify(array, 2, array.length);
 
     expect(array).toEqual([3, 5, 10, 4, 2, 1]);
   });
@@ -119,7 +119,7 @@ describe("heapify()", () => {
     //     4  2 1
 
     const array = [3, 5, 10, 4, 2, 1];
-    heapify(array, 1, array.length);
+    maxHeapify(array, 1, array.length);
 
     expect(array).toEqual([3, 5, 10, 4, 2, 1]);
   });
@@ -130,16 +130,16 @@ describe("heapify()", () => {
     //      / \  /
     //     4  2 1
     const array = [3, 5, 10, 4, 2, 1];
-    heapify(array, 0, array.length);
+    maxHeapify(array, 0, array.length);
 
     expect(array).toEqual([10, 5, 3, 4, 2, 1]);
   });
 });
 
-describe("heap()", () => {
+describe("maxHeap()", () => {
   test("builds the heap correctly", async () => {
     const array = [3, 5, 1, 4, 2, 10];
-    heap(array);
+    maxHeap(array);
     //      10
     //     /  \
     //    5    3
@@ -149,7 +149,7 @@ describe("heap()", () => {
   });
   test("builds the heap correctly", async () => {
     const array = [3, 5, 1, 4, 2];
-    heap(array);
+    maxHeap(array);
     //       5
     //     /  \
     //    4    1
@@ -159,7 +159,7 @@ describe("heap()", () => {
   });
   test("builds the heap correctly", async () => {
     const array = [0, 2, 4, 6, 8, 1, 3, 5, 7];
-    heap(array);
+    maxHeap(array);
     //          8
     //        /  \
     //       7    4
@@ -171,10 +171,10 @@ describe("heap()", () => {
   });
 });
 
-describe("insert()", () => {
+describe("insertMax()", () => {
   test("inserts a value into the heap correctly", async () => {
     const array = [3, 2, 4, 1];
-    heap(array);
+    maxHeap(array);
     //          4
     //        /  \
     //       2    3
@@ -182,7 +182,7 @@ describe("insert()", () => {
     //     1
     expect(array).toEqual([4, 2, 3, 1]);
 
-    insert(array, 5);
+    insertMax(array, 5);
     //          5
     //        /  \
     //       4    3
@@ -192,10 +192,10 @@ describe("insert()", () => {
   });
 });
 
-describe("extract()", () => {
+describe("extractMax()", () => {
   test("extracts a value from the heap correctly", async () => {
     const array = [1, 2, 3, 4, 5];
-    heap(array);
+    maxHeap(array);
     //          5
     //        /  \
     //       4    3
@@ -203,7 +203,7 @@ describe("extract()", () => {
     //     1  2
     expect(array).toEqual([5, 4, 3, 1, 2]);
 
-    const maxValue = extract(array);
+    const maxValue = extractMax(array);
     //          4
     //        /  \
     //       2    3
