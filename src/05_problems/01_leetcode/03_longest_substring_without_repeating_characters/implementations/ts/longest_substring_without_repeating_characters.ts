@@ -1,20 +1,17 @@
 export const longestSubstringLengthWithoutRepeatingCharacters = (s: string): number => {
+  const set = new Set(); // Indexer for present chars in O(1) retrieval.
+  let i = 0; // Left window side.
   let longestSubstringLength = 0; // Result accumulator.
-  let map = new Map(); // Indexer for present chars in O(1) retrieval.
-  let left = 0; // Left window side.
 
-  // Iterate string once
-  for (let right = 0; right < s.length; right++) {
-    // While string already has current character, remove the first one and shrink window from left.
-    while (map.has(s[right])) {
-      map.delete(s[left]);
-      left++;
+  for (let j = 0; j < s.length; j++) {
+    // While string already has current character, remove the first one and shrink window from i.
+    while (set.has(s[j])) {
+      set.delete(s[i]);
+      i++;
     }
 
-    // Window has shrunk until no repetitions occur:
-    // Save new character into the map, and update the counter.
-    map.set(s[right], right);
-    longestSubstringLength = Math.max(map.size, longestSubstringLength);
+    set.add(s[j]); // Save new character into the set, and update the counter.
+    longestSubstringLength = Math.max(j + 1 - i, longestSubstringLength); // Window size or length
   }
 
   return longestSubstringLength;
