@@ -35,6 +35,10 @@ mod adjacency_list;
 #[path = "./src/01_data_structures/08_disjoint_set_union_find/implementations/rs/mod.rs"]
 mod disjoint_set;
 
+// Priority Queue
+#[path = "./src/01_data_structures/09_priority_queue/implementations/rs/mod.rs"]
+mod priority_queue;
+
 // Algorithms
 
 // Merge Sort

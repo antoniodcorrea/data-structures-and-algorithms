@@ -17,7 +17,7 @@
 
 - [**Binary Search Tree**](./01_binary_search_tree/README.md): A binary tree where the left child contains a value less than the node, and the right child contains a value greater than the node. Efficient search, insertion, and deletion.
 
-- [**Heap**](./02_heap/README.md): A complete binary tree that satisfies the heap property: every parent node is greater than or equal to (max-heap) or less than or equal to (min-heap) its children. Used in priority queues.
+- [**Heap**](./02_heap/README.md): A complete binary tree that satisfies the heap property: every parent node is greater than or equal to (max-heap) or less than or equal to (min-heap) its children. Used in [priority queues](../09_priority_queue/README.md).
 
 - [**Trie**](./03_trie/README.md): A tree used for storing strings, where each level represents a character of the string. Fast prefix lookups, commonly used in autocomplete systems and dictionaries. Insert and search will have a time complexity of $h$, where $h$ is the length of the word.
 
